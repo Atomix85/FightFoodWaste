@@ -22,8 +22,7 @@
 					<Add library="libSDL2.a" />
 					<Add library="libSDL2_image.a" />
 					<Add library="libSDL2_ttf.a" />
-					<Add library="lib/libcurl.dll.a" />
-					<Add library="lib/libcurl.a" />
+					<Add library="libcurl.a" />
 					<Add directory="lib" />
 				</Linker>
 			</Target>
@@ -94,6 +93,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/ressources.h" />
+		<Unit filename="src/utils/httpRequest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utils/httpRequest.h" />
 		<Unit filename="src/utils/uiEvent.c">
 			<Option compilerVar="CC" />
 		</Unit>

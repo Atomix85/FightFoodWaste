@@ -39,11 +39,11 @@ int width, height;
     if(event.type == SDL_MOUSEBUTTONDOWN){
         idBt = getIdButtonOn(*datas, xMouse, yMouse);
         switch(idBt){
-            case 0:
+            case 1:
                 menu_end(datas);
                 datas->currentIRenderFct = NULL;
                 break;
-            case 1:
+            case 0:
                 menu_end(datas);
                 main_init(datas);
                 datas->currentIEventsFct = main_event;

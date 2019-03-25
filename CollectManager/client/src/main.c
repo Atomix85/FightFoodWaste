@@ -51,5 +51,7 @@ int main(int argc, char** argv)
     //La fin du programme détruit et désalloue ce qui a été alloué
     endApp(win, render, cDatas,r);
 
+    userConnect("Alan", "Bretelle");
+
     return 0;
 }
