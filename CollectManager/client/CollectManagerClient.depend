@@ -448,7 +448,7 @@
 1553428494 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imenu.c
 	"iMenu.h"
 
-1552250667 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\main.c
+1553533619 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\main.c
 	<SDL2/SDL.h>
 	<stdio.h>
 	"kernel.h"
@@ -473,10 +473,10 @@
 	"iMain.h"
 	"../utils/uiEvent.h"
 
-1553429661 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
+1553533619 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
 	"iConnexion.h"
 
-1553435043 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.c
+1553435543 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.c
 	"iMain.h"
 
 1553429715 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.h
@@ -1008,4 +1008,49 @@
 	"curl.h"
 
 1553502870 z:\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
+
+1553533619 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.c
+	"httpRequest.h"
+
+1553541695 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
+	<curl/curl.h>
+
+1549371612 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1549432680 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curlver.h
+
+1547035228 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1540627254 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\easy.h
+
+1539862072 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\multi.h
+	"curl.h"
+
+1549371612 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\urlapi.h
+	"curl.h"
+
+1547554786 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
 

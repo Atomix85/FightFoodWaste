@@ -23,6 +23,7 @@
 					<Add library="libSDL2_image.a" />
 					<Add library="libSDL2_ttf.a" />
 					<Add library="libcurl.a" />
+					<Add library="libcurl.dll.a" />
 					<Add directory="lib" />
 				</Linker>
 			</Target>
