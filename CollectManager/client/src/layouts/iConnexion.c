@@ -44,10 +44,12 @@ int width, height;
                 datas->currentIRenderFct = NULL;
                 break;
             case 0:
-                menu_end(datas);
-                main_init(datas);
-                datas->currentIEventsFct = main_event;
-                datas->currentIRenderFct = main_update;
+                if(userConnect("Alan", "1234")){
+                    menu_end(datas);
+                    main_init(datas);
+                    datas->currentIEventsFct = main_event;
+                    datas->currentIRenderFct = main_update;
+                }else redrawText(rendererP, datas, 9, "Identifiant incorrect !",1);
                 break;
             default :
                 break;
@@ -64,28 +66,29 @@ int menu_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
     SDL_SetRenderDrawColor(rendererP, 128, 128, 128, 0);
     SDL_RenderFillRect(rendererP, &background);
 
-    menu_update_buttons(rendererP, datas, width, height);
+    menu_update_menu(rendererP, datas, width, height);
 
     SDL_RenderPresent(rendererP);
     return 0;
 }
-int menu_update_buttons(SDL_Renderer* rendererP, Datas datas, int width, int height){
+int menu_update_menu(SDL_Renderer* rendererP, Datas datas, int width, int height){
 
     int i;
     int idBt = -1;
     int xMouse, yMouse;
 
     SDL_Rect menu = datas.ui->rectGroup[0];
+    SDL_Rect error = {menu.x+40, menu.y+10, menu.w-80, 15};
     SDL_Rect currentBt;
     SDL_Rect currentTxtBt;
 
     SDL_SetRenderDrawColor(rendererP,64, 64, 64, 0);
     SDL_RenderFillRect(rendererP,&menu);
 
+    SDL_RenderCopy(rendererP,datas.textures->texts[9],NULL,&error);
+
     SDL_GetMouseState(&xMouse, &yMouse);
     idBt = getIdButtonOn(datas,xMouse, yMouse);
-
-
     for(i = 0; i < datas.ui->nbBt; i++){
         currentBt = datas.ui->rectBt[i];
         if(idBt == i){

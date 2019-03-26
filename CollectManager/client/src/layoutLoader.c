@@ -68,8 +68,15 @@ void redrawText(SDL_Renderer* rendererP, Datas* datas, int ptrText, char * newTe
 
     //Si le code couleur est 0, le texte sera en blanc sinon en noir
     //On pourra changer la couleur du texte à volonté
-    if(codeColor==0) color = (SDL_Color){255,255,255};
-    else if(codeColor==1) color = (SDL_Color){255,0,0};
+    switch(codeColor){
+        case 0:
+            color = (SDL_Color){255,255,255};
+            break;
+        case 1:
+            color = (SDL_Color){255,0,0};
+            break;
+    }
+
 
     //On crée une nouvelle surface à partir de la police et de la chaine de caractères
     //Si la surface ne peut pas être créé, on renvoie une erreur

@@ -19,10 +19,12 @@ Ressources getFilledRessources(char * configFile){
             "Mot de passe :",
             "_psw",
             "Se connecter",
-            "   Annuler   ",
+            "   Annuler   ",        //5
             "Ajouter un article",
             "Supprimer un article",
-            "Soumettre la liste"
+            "Soumettre la liste",
+            " " //Error
+
 
         },
         "Atures-700_PERSONAL_USE.ttf",  //Police

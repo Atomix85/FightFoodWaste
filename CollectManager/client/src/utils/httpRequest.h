@@ -5,11 +5,44 @@
 
 int userConnect(char* user, char* psw){
     char* answer;
-    sendRequest("localhost/test/",
-                POST_REQUEST,"user=alan&psw=1234",&answer);
-    printf("%s", answer);
-    destroyAnswer(&answer);
 
+    char inlineArgs[255];
+    char key[2][32] = {"user", "psw"};
+    char value[2][64];
+    int result=0;
+
+    strcpy(value[0],user);    strcpy(value[1],psw);
+
+    makeArgs(key,value, 2,&inlineArgs);
+
+    if(sendRequest("localhost/test/",
+                POST_REQUEST,inlineArgs,&answer)){
+        if(strcmp(answer, "OK") == 0){
+            result=1;
+        }
+        else{
+            result=0;
+            printf(answer);
+        }
+
+        destroyAnswer(&answer);
+        return result;
+    }else{
+        return 0;
+    }
+}
+int makeArgs(char (*argsKey)[32],char (*argsValue)[64], int nb, char **inlineArgs){
+    int i;
+    (inlineArgs)[0] = '\0';
+    for(i = 0; i < nb; i++){
+        strcat(inlineArgs, argsKey[i]);
+        strcat(inlineArgs, "=");
+        strcat(inlineArgs, argsValue[i]);
+        if(i + 1 != nb){
+            strcat(inlineArgs, "&");
+        }
+    }
+    return 1;
 }
 int getInformationProduct(long long numProduct){
     char* answer;
@@ -28,8 +61,9 @@ int getInformationProduct(long long numProduct){
         destroyAnswer(&answer);
     }
     else{
-
+        return 0;
     }
+    return 1;
 }
 
 struct MemoryAnswer{
@@ -56,7 +90,7 @@ size_t ptrFuncWriteAnswer(void *contents, size_t _size, size_t nmemb, void *user
 int sendRequest(char* url, int method ,char* args, char** answer ){
     CURL * curl;
     CURLcode res;
-    char realUrl[1024];
+    char realUrl[512];
     struct MemoryAnswer buffer;
 
     //Init buffer and buffer size of answer
