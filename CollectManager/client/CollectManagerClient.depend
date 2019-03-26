@@ -942,13 +942,13 @@
 1553602734 source:z:\fightfoodwaste\collectmanager\client\src\layoutloader.c
 	"layoutLoader.h"
 
-1553602750 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
+1553604849 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
 	"iConnexion.h"
 
 1553502870 source:z:\fightfoodwaste\collectmanager\client\src\layouts\imain.c
 	"iMain.h"
 
-1553601874 source:z:\fightfoodwaste\collectmanager\client\src\main.c
+1553615968 source:z:\fightfoodwaste\collectmanager\client\src\main.c
 	<SDL2/SDL.h>
 	<stdio.h>
 	"kernel.h"
@@ -967,7 +967,7 @@
 1553527728 source:z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.c
 	"httpRequest.h"
 
-1553603331 z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
+1553614214 z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
 	<curl/curl.h>
 
 1553502870 z:\fightfoodwaste\collectmanager\client\include\curl\curl.h
@@ -1053,4 +1053,12 @@
 	"curl.h"
 
 1547554786 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
+
+1553614786 source:z:\fightfoodwaste\collectmanager\client\src\utils\network.c
+	"network.h"
+
+1553616022 z:\fightfoodwaste\collectmanager\client\src\utils\network.h
+	<stdio.h>
+	<stdlib.h>
+	<winsock2.h>
 

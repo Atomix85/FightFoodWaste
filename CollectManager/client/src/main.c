@@ -23,6 +23,7 @@ int main(int argc, char** argv)
 {
     SDL_Window* win;
     SDL_Renderer* render;
+    int net;
 
     Datas cDatas;
 
@@ -43,13 +44,21 @@ int main(int argc, char** argv)
     cDatas.version = "pre-alpha-1";
     cDatas.projectName = "CollectManager";
 
+    net = initWSA();
+
     //On essaye d'initialisé et ensuite de post-initialisé
     //avant de faire tourner le programme en boucle
     if(init(&win, &render,r) &  postInit(render, &cDatas,r)){
         updateApp(win, render, cDatas);
+        updateNet();
     }
+
     //La fin du programme détruit et désalloue ce qui a été alloué
     endApp(win, render, cDatas,r);
+
+    if(net){
+        endWSA();
+    }
 
     return 0;
 }

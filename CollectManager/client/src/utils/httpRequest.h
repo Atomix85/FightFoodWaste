@@ -148,6 +148,7 @@ int sendRequest(char* url, int method ,char* args, char** answer ){
 
     }
 }
+
 void destroyAnswer(char** answer){
     //Destroy an allocated answer
     free(*answer);
