@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
+#include <pthread.h>
 
 #include "kernel.h"
 #include "ressources.h"
@@ -7,6 +8,7 @@
 #include "datas/surfacesManager.h"
 #include "datas/texturesManager.h"
 #include "config.h"
+#include "utils/network.h"
 
 /**
 *
@@ -24,6 +26,11 @@ int main(int argc, char** argv)
     SDL_Window* win;
     SDL_Renderer* render;
     int net;
+
+    struct WinArgs *win_args;
+
+    pthread_t win_thread;
+    pthread_t network_thread;
 
     Datas cDatas;
 
@@ -44,20 +51,19 @@ int main(int argc, char** argv)
     cDatas.version = "pre-alpha-1";
     cDatas.projectName = "CollectManager";
 
-    net = initWSA();
+    net = initNet();
 
     //On essaye d'initialisé et ensuite de post-initialisé
     //avant de faire tourner le programme en boucle
     if(init(&win, &render,r) &  postInit(render, &cDatas,r)){
         updateApp(win, render, cDatas);
-        updateNet();
     }
 
     //La fin du programme détruit et désalloue ce qui a été alloué
     endApp(win, render, cDatas,r);
 
     if(net){
-        endWSA();
+        endNet();
     }
 
     return 0;

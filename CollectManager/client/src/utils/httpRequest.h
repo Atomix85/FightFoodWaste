@@ -15,7 +15,7 @@ int userConnect(char* user, char* psw){
 
     makeArgs(key,value, 2,&inlineArgs);
 
-    if(sendRequest("localhost/test/",
+    if(sendRequest("192.168.0.94",
                 POST_REQUEST,inlineArgs,&answer)){
         if(strcmp(answer, "OK") == 0){
             result=1;
@@ -55,7 +55,6 @@ int getInformationProduct(long long numProduct){
     strcat(url, ".json");
 
     if(sendRequest(url, GET_REQUEST,"",&answer)){
-        printf("%s", answer);
 
 
         destroyAnswer(&answer);

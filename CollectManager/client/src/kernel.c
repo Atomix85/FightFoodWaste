@@ -198,7 +198,7 @@ void endApp(SDL_Window* windowP, SDL_Renderer* rendererP,Datas datas, Ressources
     //On ferme SDL
     SDL_Quit();
 }
-int updateApp(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
+int updateApp(SDL_Window *windowP, SDL_Renderer *rendererP, Datas datas){
     int continuer = 1;
     char titleWin[64];
     SDL_Event event;
@@ -208,8 +208,7 @@ int updateApp(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
     strcpy(titleWin, datas.projectName);
     strcat(titleWin, " ");
     strcat(titleWin, datas.version);
-    SDL_SetWindowTitle(windowP, titleWin);
-
+    SDL_SetWindowTitle(windowP,titleWin);
 
     //On initialise le premier layout : menu
     //et on 'link' nos fonctions update et event
@@ -222,9 +221,10 @@ int updateApp(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
     {
         //Le layoutLoader rafraichit la gestion des evenements et
         //l'affichage des éléments sur la fenêtre
-
         updateRender(windowP, rendererP, datas);
         updateEvent(event, windowP, rendererP,&datas, &continuer);
+
+
 
     }
     return 0;

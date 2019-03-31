@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1553426706 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\config.c
+1553430306 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\config.c
 	"config.h"
 
-1548704062 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\config.h
+1548707662 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\config.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"SDL2/SDL.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_assert.h"
@@ -41,12 +41,12 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_main.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_stdinc.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -75,34 +75,34 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_config.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_config.h
 	"SDL_platform.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_platform.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_platform.h
 	"AvailabilityMacros.h"
 	"TargetConditionals.h"
 	<winapifamily.h>
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\begin_code.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\begin_code.h
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\close_code.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\close_code.h
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_assert.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_assert.h
 	"SDL_config.h"
 	"begin_code.h"
 	<signal.h>
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_atomic.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_atomic.h
 	"SDL_stdinc.h"
 	"SDL_platform.h"
 	"begin_code.h"
 	<mbarrier.h>
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_audio.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -112,24 +112,24 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_error.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_endian.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mutex.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_thread.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_atomic.h"
@@ -140,18 +140,18 @@
 	<stdlib.h>
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rwops.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_clipboard.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_clipboard.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_cpuinfo.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	<intrin.h>
 	<intrin.h>
@@ -166,7 +166,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_events.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -180,7 +180,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_video.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -188,13 +188,13 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_pixels.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_pixels.h
 	"SDL_stdinc.h"
 	"SDL_endian.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rect.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rect.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_pixels.h"
@@ -202,7 +202,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_surface.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_surface.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -211,11 +211,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_blendmode.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_blendmode.h
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keyboard.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keycode.h"
@@ -223,27 +223,27 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keycode.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keycode.h
 	"SDL_stdinc.h"
 	"SDL_scancode.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_scancode.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_scancode.h
 	"SDL_stdinc.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mouse.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_joystick.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gamecontroller.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gamecontroller.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
@@ -251,11 +251,11 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_quit.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gesture.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gesture.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
@@ -263,66 +263,66 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_touch.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_touch.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_filesystem.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_filesystem.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_haptic.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_haptic.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_joystick.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_hints.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_hints.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_loadso.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_log.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_log.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_messagebox.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_messagebox.h
 	"SDL_stdinc.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_power.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_power.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_render.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_render.h
 	"SDL_stdinc.h"
 	"SDL_rect.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_sensor.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_sensor.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_shape.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_shape.h
 	"SDL_stdinc.h"
 	"SDL_pixels.h"
 	"SDL_rect.h"
@@ -331,7 +331,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_system.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_system.h
 	"SDL_stdinc.h"
 	"SDL_keyboard.h"
 	"SDL_render.h"
@@ -339,21 +339,21 @@
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_timer.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_timer.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1540998544 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_version.h
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1541969832 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\commons_datas.c
+1541973432 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\commons_datas.c
 	"commons_datas.h"
 
-1553425560 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\commons_datas.h
+1553429160 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\commons_datas.h
 	<stdio.h>
 	<stdlib.h>
 	"SDL2/SDL.h"
@@ -363,42 +363,42 @@
 	"uiManager.h"
 	"../config.h"
 
-1454362933 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_ttf.h
+1454366533 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
 
-1543147206 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.h
+1543150806 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.h
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>
 
-1543147327 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.h
+1543150927 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.h
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>
 
-1543147482 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\uimanager.h
+1543151082 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\uimanager.h
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
 	<SDL2/SDL_ttf.h>
 
-1541785125 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.c
+1541788725 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.c
 	"surfacesManager.h"
 
-1542447094 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.c
+1542450694 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.c
 	"texturesManager.h"
 
-1542447088 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\uimanager.c
+1542450688 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\uimanager.c
 	"uiManager.h"
 
-1552251905 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\kernel.c
+1554065492 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\kernel.c
 	"kernel.h"
 
-1553429484 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\kernel.h
+1554065442 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\kernel.h
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<SDL2/SDL_ttf.h>
@@ -410,18 +410,18 @@
 	"layoutLoader.h"
 	"layouts/iConnexion.h"
 
-1540997982 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_image.h
+1541001582 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1553434740 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\ressources.h
+1553777778 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\ressources.h
 	<stdio.h>
 	<stdlib.h>
 	"config.h"
 
-1553429476 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layoutloader.h
+1553433076 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layoutloader.h
 	<SDL2/SDL.h>
 	<stdio.h>
 	<stdlib.h>
@@ -438,33 +438,35 @@
 	"../datas/commons_datas.h"
 	"../utils/uiEvent.h"
 
-1548704062 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\uievent.h
+1548707662 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\uievent.h
 	"../datas/commons_datas.h"
 	<SDL2/SDL.h>
 
-1553428133 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layoutloader.c
+1553777777 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layoutloader.c
 	"layoutLoader.h"
 
 1553428494 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imenu.c
 	"iMenu.h"
 
-1553533619 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\main.c
+1554069892 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\main.c
 	<SDL2/SDL.h>
 	<stdio.h>
+	<pthread.h>
 	"kernel.h"
 	"ressources.h"
 	"datas/commons_datas.h"
 	"datas/surfacesManager.h"
 	"datas/texturesManager.h"
 	"config.h"
+	"utils/network.h"
 
-1553434735 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\ressources.c
+1553777778 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\ressources.c
 	"ressources.h"
 
-1553425576 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\uievent.c
+1553429176 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\uievent.c
 	"uiEvent.h"
 
-1553429689 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.h
+1553777778 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.h
 	<SDL2/SDL.h>
 	<stdio.h>
 	<stdlib.h>
@@ -473,13 +475,13 @@
 	"iMain.h"
 	"../utils/uiEvent.h"
 
-1553533619 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
+1553777778 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
 	"iConnexion.h"
 
-1553435543 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.c
+1553439143 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.c
 	"iMain.h"
 
-1553429715 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.h
+1553433315 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.h
 	<SDL2/SDL.h>
 	<stdio.h>
 	<stdlib.h>
@@ -1009,13 +1011,13 @@
 
 1553502870 z:\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
 
-1553533619 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.c
+1553537219 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.c
 	"httpRequest.h"
 
-1553541695 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
+1553894917 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
 	<curl/curl.h>
 
-1549371612 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curl.h
+1549375212 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curl.h
 	"curlver.h"
 	"system.h"
 	<stdio.h>
@@ -1034,9 +1036,9 @@
 	"urlapi.h"
 	"typecheck-gcc.h"
 
-1549432680 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curlver.h
+1549436280 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curlver.h
 
-1547035228 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\system.h
+1547038828 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\system.h
 	<winsock2.h>
 	<windows.h>
 	<ws2tcpip.h>
@@ -1044,15 +1046,15 @@
 	<sys/socket.h>
 	<sys/poll.h>
 
-1540627254 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\easy.h
+1540630854 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\easy.h
 
-1539862072 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\multi.h
+1539865672 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\multi.h
 	"curl.h"
 
-1549371612 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\urlapi.h
+1549375212 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\urlapi.h
 	"curl.h"
 
-1547554786 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
+1547558386 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
 
 1553614786 source:z:\fightfoodwaste\collectmanager\client\src\utils\network.c
 	"network.h"
@@ -1061,4 +1063,20 @@
 	<stdio.h>
 	<stdlib.h>
 	<winsock2.h>
+
+1554069865 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\network.c
+	"network.h"
+
+1554069742 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\network.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_net.h>
+
+1451811446 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_net.h
+	<stdint.h>
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
 
