@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL2/SDL_net.h>
+#include "../datas/commons_datas.h"
 
 #ifndef NET_INCLUDE
 #define NET_INCLUDE
 
-typedef int socklen_t;
+int initNet(Datas* datas,Uint16 port);
 
-int initWSA(void);
+void updateNet(Datas* datas);
 
-void updateNet();
-
-void endWSA(void);
+void endNet(void);
 #endif // NET_INCLUDE
