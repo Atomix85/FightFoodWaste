@@ -40,18 +40,20 @@ int main(int argc, char** argv)
     Surfaces_manager sm;
     Textures_manager tm;
     UI_manager uim;
+    NET_manager netm;
 
 
     //On assigne les différents managers du programme
     cDatas.surfaces = &sm;
     cDatas.textures = &tm;
     cDatas.ui = &uim;
+    cDatas.network = &netm;
 
     //On définit la version et le nom du projet utilisé dans le programme
     cDatas.version = "pre-alpha-1";
     cDatas.projectName = "CollectManager";
 
-    net = initNet();
+    net = initNet(&cDatas,15340);
 
     //On essaye d'initialisé et ensuite de post-initialisé
     //avant de faire tourner le programme en boucle

@@ -17,6 +17,7 @@
 #include "surfacesManager.h"
 #include "texturesManager.h"
 #include "uiManager.h"
+#include "netManager.h"
 #include "../config.h"
 
 
@@ -35,6 +36,8 @@ struct Datas {
     Surfaces_manager* surfaces;
     /**Accès aux textures chargés*/
     Textures_manager* textures;
+
+    NET_manager* network;
 
     SDL_AudioSpec outAudio;
     /**Accès aux UI*/
