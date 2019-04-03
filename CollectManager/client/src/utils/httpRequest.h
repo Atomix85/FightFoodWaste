@@ -1,9 +1,9 @@
 #include <curl/curl.h>
 
-#define GET_REQUEST 0
-#define POST_REQUEST 1
+#define GET_REQUEST     0
+#define POST_REQUEST    1
 
-int userConnect(char* user, char* psw){
+int userConnect(char* user, char* psw, char *errorMsg){
     char* answer;
 
     char inlineArgs[255];
@@ -15,14 +15,14 @@ int userConnect(char* user, char* psw){
 
     makeArgs(key,value, 2,&inlineArgs);
 
-    if(sendRequest("192.168.0.94",
+    if(sendRequest("176.132.110.29",
                 POST_REQUEST,inlineArgs,&answer)){
-        if(strcmp(answer, "OK") == 0){
+        if(strcmp(answer, "ok") == 0){
             result=1;
         }
         else{
+            strcpy(errorMsg, answer);
             result=0;
-            printf(answer);
         }
 
         destroyAnswer(&answer);
@@ -120,6 +120,8 @@ int sendRequest(char* url, int method ,char* args, char** answer ){
         }
         //Set the url in option of request
         curl_easy_setopt(curl, CURLOPT_URL, realUrl);
+
+        printf("%s\n",args);
 
         //Send request
         res = curl_easy_perform(curl);

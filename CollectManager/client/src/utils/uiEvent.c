@@ -18,12 +18,29 @@ int getIdButtonOn(Datas datas, int xMouse, int yMouse){
         }
     }
     return -1;
-
 }
-int inputTxtListener(Datas * datas, SDL_Event event, int lenghtMax){
+int getIdInputTxtOn(Datas datas, int xMouse, int yMouse){
+    int i;
+    int nbInputTxt = datas.ui->nbInputText;
+
+    SDL_Rect currentBt;
+
+    for(i = 0; i < nbInputTxt; i++){
+
+        currentBt = datas.ui->rectInputText[i];
+
+        if(currentBt.x < xMouse && xMouse < currentBt.x+currentBt.w
+            && currentBt.y < yMouse && yMouse < currentBt.y+currentBt.h){
+
+            return i;
+        }
+    }
+    return -1;
+}
+int inputTxtListener(Datas * datas, SDL_Event event, char ptrInputText, int lenghtMax){
     int keycode;
     char letter;
-    short lenght = strlen(datas->inputTxt);
+    short lenght = strlen(datas->ui->inputText[ptrInputText]);
     if(event.type == SDL_KEYDOWN){
 
         keycode = event.key.keysym.sym;
@@ -36,10 +53,11 @@ int inputTxtListener(Datas * datas, SDL_Event event, int lenghtMax){
             if(letter == ';'){
                 letter = '.';
             }
-            datas->inputTxt[lenght] = letter;
-            datas->inputTxt[lenght+1] = '\0';
+            datas->ui->inputText[ptrInputText][lenght] = letter;
+
+            datas->ui->inputText[ptrInputText][lenght+1] = '\0';
         }else if (8 == keycode && lenght> 0){
-            datas->inputTxt[lenght-1] = '\0';
+            datas->ui->inputText[ptrInputText][lenght-1] = '\0';
         }
     }
     return 1;

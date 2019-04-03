@@ -61,6 +61,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/datas/commons_datas.h" />
+		<Unit filename="src/datas/netManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/netManager.h" />
 		<Unit filename="src/datas/surfacesManager.c">
 			<Option compilerVar="CC" />
 		</Unit>

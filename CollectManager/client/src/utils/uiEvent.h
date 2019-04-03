@@ -22,6 +22,6 @@ la position du curseur est dessus
 int getIdButtonOn(Datas datas, int xMouse, int yMouse);
 
 /** Ecoute l'entrée des touches du clavier en le stockant dans filenameInputTxt */
-int inputTxtListener(Datas * datas, SDL_Event event, int lenghtMax);
+int inputTxtListener(Datas * datas, SDL_Event event,char ptrInputText, int lenghtMax);
 
 #endif // UI_EVENT

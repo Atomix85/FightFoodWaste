@@ -43,7 +43,9 @@ struct Datas {
     /**Accès aux UI*/
     UI_manager* ui;
 
-    /**Input texte fichier*/
+    /**Input texte fichier
+    @deprecated
+    */
     char inputTxt[32];
 
     /**Version du projet*/
@@ -58,6 +60,8 @@ struct Datas {
     int (*currentIRenderFct)(SDL_Window *,SDL_Renderer *, Datas);
     /**Pointeur vers la fonction des évènements actuelle*/
     int (*currentIEventsFct)(SDL_Event, SDL_Window*, SDL_Renderer*, Datas*, int*);
+     /**Pointeur vers la fonction de destruction actuelle*/
+    int (*currentIEndFct)(Datas*);
 
     /**Police de texte du programme*/
     TTF_Font* font;
