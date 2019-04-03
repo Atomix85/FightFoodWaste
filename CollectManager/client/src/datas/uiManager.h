@@ -22,6 +22,12 @@ struct UI_manager {
 
     /**Nombre de boutons total*/
     int nbBt;
+
+    int nbInputText;
+    char** inputText;
+    SDL_Rect * rectInputText;
+    char ptrInputText;
+
     /**Liste des groupes design*/
     SDL_Rect * rectGroup;
     /**Liste des boutons*/

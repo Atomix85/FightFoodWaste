@@ -118,7 +118,7 @@ void updateEvent(SDL_Event event, SDL_Window* windowP, SDL_Renderer * rendererP,
         //-destruction des UI
         //-running est faux
         case SDL_QUIT:
-            menu_end(datas);
+            (*datas->currentIEndFct)(datas);
             datas->currentIRenderFct = NULL;
             break;
         default:

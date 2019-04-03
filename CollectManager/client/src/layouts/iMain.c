@@ -42,12 +42,8 @@ int width, height;
         idBt = getIdButtonOn(*datas, xMouse, yMouse);
         switch(idBt){
             case 0:
-                menu_end(datas);
-                datas->currentIRenderFct = NULL;
                 break;
             case 1:
-                menu_end(datas);
-                datas->currentIRenderFct = NULL;
                 break;
             default :
                 break;
@@ -102,7 +98,7 @@ int main_update_buttons(SDL_Renderer* rendererP, Datas datas, int width, int hei
         currentTxtBt.h = currentBt.h - 4;
         currentTxtBt.w = currentBt.w - 4;
         currentTxtBt.x = currentBt.x +2;
-        SDL_RenderCopy(rendererP,datas.textures->texts[6 + i],NULL,&currentTxtBt);
+        SDL_RenderCopy(rendererP,datas.textures->texts[5 + i],NULL,&currentTxtBt);
     }
     return 0;
 }

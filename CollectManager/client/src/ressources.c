@@ -15,12 +15,11 @@ Ressources getFilledRessources(char * configFile){
         NB_TEXT,
         {   //Info : les textes précédents d'un _ sont des textes dynamiques par convention
             "Utilisateur :",
-            "_user",
             "Mot de passe :",
-            "_psw",
+            "_inputText",
             "Se connecter",
-            "   Annuler   ",        //5
-            "Ajouter un article",
+            "   Annuler   ",
+            "Ajouter un article", //5
             "Supprimer un article",
             "Soumettre la liste",
             " " //Error

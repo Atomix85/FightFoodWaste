@@ -215,6 +215,7 @@ int updateApp(SDL_Window *windowP, SDL_Renderer *rendererP, Datas datas){
     menu_init(&datas);
     datas.currentIRenderFct = menu_update;
     datas.currentIEventsFct = menu_event;
+    datas.currentIEndFct = menu_end;
 
     //Tant que le programme est en 'vie'
     while (continuer)
