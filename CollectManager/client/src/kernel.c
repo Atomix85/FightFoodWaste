@@ -224,7 +224,6 @@ int updateApp(SDL_Window *windowP, SDL_Renderer *rendererP, Datas datas){
         //l'affichage des éléments sur la fenêtre
         updateRender(windowP, rendererP, datas);
         updateEvent(event, windowP, rendererP,&datas, &continuer);
-        updateNet(&datas);
 
 
     }

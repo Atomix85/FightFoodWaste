@@ -42,6 +42,11 @@ int width, height;
         idBt = getIdButtonOn(*datas, xMouse, yMouse);
         switch(idBt){
             case 0:
+                main_end(datas);
+                add_init(datas);
+                datas->currentIEndFct = add_end;
+                datas->currentIEventsFct = add_event;
+                datas->currentIRenderFct = add_update;
                 break;
             case 1:
                 break;

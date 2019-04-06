@@ -14,7 +14,6 @@ int initNet(Datas* datas,Uint16 port){
         printf("CANNOT OPEN TCP CONNECTION : %s\n", SDLNet_GetError());
         return 0;
     }
-
     return 1;
 }
 
@@ -43,7 +42,9 @@ void updateNet(Datas* datas){
         return;
     }
     response[13] = '\0';
-    printf("Received : '%s'\n", response);
+    strcpy(datas->network->lastPacket,response);
+    endNet();
+    datas->network->isListening = 0;
     return;
 
 }

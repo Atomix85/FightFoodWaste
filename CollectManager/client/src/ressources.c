@@ -22,7 +22,10 @@ Ressources getFilledRessources(char * configFile){
             "Ajouter un article", //5
             "Supprimer un article",
             "Soumettre la liste",
-            " " //Error
+            " ", //Error
+            "   Ajouter   ",
+            "Numero du produit :", //10
+            "Ecouter la connexion",
 
 
         },

@@ -103,7 +103,7 @@ int updateRender(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
 }
 void updateEvent(SDL_Event event, SDL_Window* windowP, SDL_Renderer * rendererP, Datas * datas, int * running){
     //On attend un évènement (souris, clavier...)
-    SDL_WaitEvent(&event);
+    SDL_PollEvent(&event);
 
     //On appelle un pointeur de fonction pour gérer les évènements
     //(mais également le calcul des éléments UI)

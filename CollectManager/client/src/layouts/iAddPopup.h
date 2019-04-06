@@ -1,46 +1,41 @@
 /**
-* \file iMenu.c
+* \file iLevelManager.c
 * \author Sophie P.
-* \date 15/11/2018
+* \date 12/12/2018
 * \version 1.1
 *
-* Dessine le menu du programme
+* Dessine le menu de choix des niveaux du mode didacticiel
 */
+
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL2/SDL_ttf.h>
+#include <string.h>
 
 #include "../datas/commons_datas.h"
-
 #include "../utils/uiEvent.h"
 
-#include "iAddPopup.h"
+#ifndef I_CONCEPTION_MSG_H
+#define I_CONCEPTION_MSG_H
 
-#ifndef I_CONCEPTION_H
-#define I_CONCEPTION_H
+#include "../layoutLoader.h"
 
-
-#endif // I_CONCEPTION_H
-
-
-
+#endif // I_CONCEPTION_MSG_H
 
 /**
 Obligatoire : Initialisation de la page (allocation des tableaux UI)
 */
-int main_init(Datas *datas);
+int add_init(Datas *datas);
 /**
 Obligatoire : Mise à jour du rendu de la page (affichage des éléments UI)
 */
-int main_update(SDL_Window* windowP, SDL_Renderer* renderer, Datas datas);
-/** Dessine les boutons représentants les niveaux */
-int main_update_buttons(SDL_Renderer* rendererP, Datas datas, int width, int height);
+int add_update(SDL_Window* windowP, SDL_Renderer* renderer, Datas datas);
 /**
 Obligatoire : Mise à jour de la position des élements UI et écoute des évenements de ceux ci
 */
-int main_event(SDL_Event event,SDL_Window* windowP,SDL_Renderer* renderer,Datas *datas, int *running);
+int add_event(SDL_Event event,SDL_Window* windowP,SDL_Renderer* renderer,Datas *datas, int *running);
 /**
 Obligatoire : Destruction de la page (désallocation des tableaux UI)
 */
-int main_end(Datas *datas);
+int add_end(Datas *datas);

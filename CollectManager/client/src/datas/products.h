@@ -12,17 +12,15 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_net.h>
 
-#ifndef NET_MANAGER_H
-#define NET_MANAGER_H
+#ifndef PRODUCT_H
+#define PRODUCT_H
 
 /**Strcture contenant les différents éléments de réseau*/
-typedef struct NET_manager NET_manager;
-struct NET_manager {
-    IPaddress ip,*remoteip;
-    TCPsocket server, client;
-    char lastPacket[1024];
-    char isListening;
+typedef struct Product Product;
+struct Product {
+    long long idProduct;
+    char* name;
 
 };
 
-#endif // UI_MANAGER_H
+#endif
