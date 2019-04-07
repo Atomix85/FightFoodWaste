@@ -65,6 +65,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/datas/netManager.h" />
+		<Unit filename="src/datas/products.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/products.h" />
 		<Unit filename="src/datas/surfacesManager.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -85,6 +89,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/layoutLoader.h" />
+		<Unit filename="src/layouts/components/cListProducts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/components/cListProducts.h" />
+		<Unit filename="src/layouts/iAddPopup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/iAddPopup.h" />
 		<Unit filename="src/layouts/iConnexion.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -104,6 +116,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/utils/httpRequest.h" />
+		<Unit filename="src/utils/listHelper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utils/listHelper.h" />
 		<Unit filename="src/utils/network.c">
 			<Option compilerVar="CC" />
 		</Unit>

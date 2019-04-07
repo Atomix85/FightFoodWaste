@@ -17,6 +17,7 @@
 #include "surfacesManager.h"
 #include "texturesManager.h"
 #include "uiManager.h"
+#include "products.h"
 #include "netManager.h"
 #include "../config.h"
 
@@ -36,17 +37,11 @@ struct Datas {
     Surfaces_manager* surfaces;
     /**Accès aux textures chargés*/
     Textures_manager* textures;
-
+    /** Accès aux variables réseau */
     NET_manager* network;
 
-    SDL_AudioSpec outAudio;
     /**Accès aux UI*/
     UI_manager* ui;
-
-    /**Input texte fichier
-    @deprecated
-    */
-    char inputTxt[32];
 
     /**Version du projet*/
     char *version;
@@ -62,6 +57,9 @@ struct Datas {
     int (*currentIEventsFct)(SDL_Event, SDL_Window*, SDL_Renderer*, Datas*, int*);
      /**Pointeur vers la fonction de destruction actuelle*/
     int (*currentIEndFct)(Datas*);
+
+    ItemProduct *listProduct;
+    int nbProduct;
 
     /**Police de texte du programme*/
     TTF_Font* font;

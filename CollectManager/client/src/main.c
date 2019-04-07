@@ -53,6 +53,11 @@ int main(int argc, char** argv)
     cDatas.version = "pre-alpha-1";
     cDatas.projectName = "CollectManager";
 
+    cDatas.network->isActivated = initNet(&cDatas,15340);
+
+    cDatas.listProduct = NULL;
+    cDatas.nbProduct = 0;
+
     //On essaye d'initialisé et ensuite de post-initialisé
     //avant de faire tourner le programme en boucle
     if(init(&win, &render,r) &  postInit(render, &cDatas,r)){
@@ -61,8 +66,8 @@ int main(int argc, char** argv)
 
     //La fin du programme détruit et désalloue ce qui a été alloué
     endApp(win, render, cDatas,r);
-
-    if(cDatas.network->isListening){
+    cDatas.listProduct = removeAll(cDatas.listProduct);
+    if(cDatas.network->isActivated){
         endNet();
     }
     return 0;

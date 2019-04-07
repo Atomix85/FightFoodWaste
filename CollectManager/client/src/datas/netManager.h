@@ -18,10 +18,16 @@
 /**Strcture contenant les différents éléments de réseau*/
 typedef struct NET_manager NET_manager;
 struct NET_manager {
+    /** Ip du serveur et du client*/
     IPaddress ip,*remoteip;
+    /** Socket du serveur et du client */
     TCPsocket server, client;
+    /** Dernier paquet de 1024 bits reçus */
     char lastPacket[1024];
+    /** Est en train d'écouter */
     char isListening;
+
+    char isActivated;
 
 };
 

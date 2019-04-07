@@ -26,6 +26,7 @@ Ressources getFilledRessources(char * configFile){
             "   Ajouter   ",
             "Numero du produit :", //10
             "Ecouter la connexion",
+            "Arreter l'ecoute",
 
 
         },

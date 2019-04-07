@@ -38,13 +38,12 @@ void updateNet(Datas* datas){
     len=SDLNet_TCP_Recv(datas->network->client,response, 14);
     SDLNet_TCP_Close(datas->network->client);
     if(!len){
-        printf("CANNOT RECEIVE CLIENT MESSAGE : %s\n", SDLNet_GetError());
+        printf("\tCANNOT RECEIVE CLIENT MESSAGE : %s\n", SDLNet_GetError());
         return;
     }
     response[13] = '\0';
     strcpy(datas->network->lastPacket,response);
-    endNet();
-    datas->network->isListening = 0;
+    //datas->network->isListening = 0;
     return;
 
 }

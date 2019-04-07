@@ -2,7 +2,7 @@
 
 int add_init(Datas* datas){
     int i;
-    int nbButton = 3;
+    int nbButton = 4;
     int nbGroup = 2;
     int nbInputText = 1;
 
@@ -38,6 +38,9 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
     int i;
     int net;
     char idInputTxt;
+    long long no_product;
+    Product product;
+    char *err;
     SDL_Rect menu;
 
     //Refresh buttons' position
@@ -54,7 +57,8 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
 
     datas->ui->rectBt[0] = (SDL_Rect){menu.x+10,menu.y+370, menu.w/2 - 20,20};
     datas->ui->rectBt[1] = (SDL_Rect){menu.x+10+menu.w/2,menu.y+370, menu.w/2-20,20};
-    datas->ui->rectBt[2] = (SDL_Rect){menu.x+menu.w/4, menu.y+100, menu.w/2, 20};
+    datas->ui->rectBt[2] = (SDL_Rect){menu.x+20, menu.y+100, menu.w/2-40, 20};
+    datas->ui->rectBt[3] = (SDL_Rect){menu.x+menu.w/2+20, menu.y+100, menu.w/2-40, 20};
 
     //Network listening
     if(datas->network->isListening){
@@ -72,22 +76,28 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
                 datas->currentIEndFct = main_end;
                 datas->currentIEventsFct = main_event;
                 datas->currentIRenderFct = main_update;
-                if(datas->network->isListening){
-                    endNet();
-                }
-                break;
+                datas->network->isListening = 0;
+                return 0;
             case 1:
+                strcpy(product.idProduct,datas->ui->inputText[0]);
+                strcpy(product.name,"bonjour");
+                product.quantity = 9001;
+                product.unity = 1;
+                datas->nbProduct++;
+                addItem(&datas->listProduct,product);
                 add_end(datas);
                 main_init(datas);
                 datas->currentIEndFct = main_end;
                 datas->currentIEventsFct = main_event;
                 datas->currentIRenderFct = main_update;
-                if(datas->network->isListening){
-                    endNet();
-                }
-                break;
+                datas->network->isListening = 0;
+
+                return 0;
             case 2:
-                datas->network->isListening = initNet(datas,15340);
+                datas->network->isListening = 1;
+                break;
+            case 3:
+                datas->network->isListening = 0;
                 break;
         }
         idInputTxt = getIdInputTxtOn(*datas, xMouse, yMouse);
@@ -146,8 +156,9 @@ int add_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
     //Dessin des boutons
     SDL_GetMouseState(&xMouse, &yMouse);
     idBt = getIdButtonOn(datas,xMouse, yMouse);
-    for(i = 0; i < 3;i++){
-        if(idBt == i){
+    for(i = 0; i < 4;i++){
+        if(idBt == i || (i == 2 && datas.network->isListening) ||
+           (i == 3 && !datas.network->isListening) ){
             SDL_SetRenderDrawColor(rendererP,128, 64, 64, 0);
             button.x += 5;
             button.y += 5;
@@ -161,6 +172,7 @@ int add_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
     case 0:SDL_RenderCopy(rendererP, datas.textures->texts[4], NULL, &buttonT);break;
     case 1:SDL_RenderCopy(rendererP, datas.textures->texts[9], NULL, &buttonT);break;
     case 2:SDL_RenderCopy(rendererP, datas.textures->texts[11], NULL, &buttonT);break;
+    case 3:SDL_RenderCopy(rendererP, datas.textures->texts[12], NULL, &buttonT);break;
         }
 
     }

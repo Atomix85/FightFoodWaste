@@ -18,9 +18,17 @@
 /**Strcture contenant les différents éléments de réseau*/
 typedef struct Product Product;
 struct Product {
-    long long idProduct;
-    char* name;
-
+    char idProduct[14];
+    char name[48];
+    char unity;
+    int quantity;   // 'this' quantity = real-quantity * 100
+                    // e.g. '4' -> 400; '0.5Kg' -> 50; '7.5L' -> 750...
+};
+/**Strcture contenant les différents éléments de réseau*/
+typedef struct ItemProduct ItemProduct;
+struct ItemProduct {
+    Product *product;
+    ItemProduct *next;
 };
 
 #endif
