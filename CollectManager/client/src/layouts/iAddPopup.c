@@ -38,9 +38,7 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
     int i;
     int net;
     char idInputTxt;
-    long long no_product;
-    Product product;
-    char *err;
+    char idProduct[13], name[48];
     SDL_Rect menu;
 
     //Refresh buttons' position
@@ -79,12 +77,12 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
                 datas->network->isListening = 0;
                 return 0;
             case 1:
-                strcpy(product.idProduct,datas->ui->inputText[0]);
-                strcpy(product.name,"bonjour");
-                product.quantity = 9001;
-                product.unity = 1;
+                strcpy(idProduct,datas->ui->inputText[0]);
+                strcpy(name,"bonjour");
+                //product.quantity = 9001;
+                //product.unity = 1;
                 datas->nbProduct++;
-                addItem(&datas->listProduct,product);
+                datas->listProduct = addItem(datas->listProduct,idProduct, name, 9001,1);
                 add_end(datas);
                 main_init(datas);
                 datas->currentIEndFct = main_end;

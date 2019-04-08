@@ -33,33 +33,32 @@ int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height)
 
     tmpLine = (SDL_Rect) {45,65,100,10};
 
-    for(i = 0; i < datas.nbProduct; i++){
+    while(itemCurrent != NULL){
         tmpLine.x = 45;
 
-        if(itemCurrent->product == NULL) return 0;
+        printf("%d\n", datas.nbProduct);
 
-        tmpLine.w = 8 * strlen(itemCurrent->product->idProduct);
-        redrawText(rendererP, &datas, 2, itemCurrent->product->idProduct, 0);
+        tmpLine.w = 8 * strlen(itemCurrent->idProduct);
+        redrawText(rendererP, &datas, 2, itemCurrent->idProduct, 0);
         SDL_RenderCopy(rendererP,datas.textures->texts[2],NULL,&tmpLine);
 
 
         tmpLine.x = 155;
 
-        tmpLine.w = 10 * strlen(itemCurrent->product->name);
-        redrawText(rendererP, &datas, 2, itemCurrent->product->name, 0);
+        tmpLine.w = 10 * strlen(itemCurrent->name);
+        redrawText(rendererP, &datas, 2, itemCurrent->name, 0);
         SDL_RenderCopy(rendererP,datas.textures->texts[2],NULL,&tmpLine);
 
         tmpLine.x = 535;
 
-        printf("%d %d\n", i, itemCurrent->product->quantity);
-        makeQuantityFormat(quantity, *itemCurrent->product);
+        makeQuantityFormat(quantity, *itemCurrent);
         tmpLine.w = 10 * strlen(quantity);
         redrawText(rendererP, &datas, 2, quantity, 0);
         SDL_RenderCopy(rendererP,datas.textures->texts[2],NULL,&tmpLine);
 
         SDL_RenderDrawLine(rendererP, 0,tmpLine.y+15, width, tmpLine.y+15);
 
-        //itemCurrent = itemCurrent->next;
+        itemCurrent = itemCurrent->next;
         tmpLine.y+=20;
     }
 
@@ -68,7 +67,7 @@ int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height)
 
 }
 
-void makeQuantityFormat(char format[8], Product product){
+void makeQuantityFormat(char format[8], ItemProduct product){
     char result[8];
     char dec[3];
     if(product.quantity >= 10000){
@@ -101,6 +100,5 @@ void makeQuantityFormat(char format[8], Product product){
     }
 
     strcpy(format, result);
-    strcpy(format, "test");
 
 }

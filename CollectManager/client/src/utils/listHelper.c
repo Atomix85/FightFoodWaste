@@ -1,14 +1,17 @@
 #include "listHelper.h"
 
-void addItem(ItemProduct** start, Product product){
+ItemProduct* addItem(ItemProduct* start, char idProduct[13], char name[48], int quantity, char unity){
     ItemProduct * item;
-    Product * ptrProduct;
     item = malloc(sizeof(ItemProduct));
-    ptrProduct = malloc(sizeof(Product));
-    *ptrProduct = (Product) product;
-    item->product = ptrProduct;
-    item->next = *start;
-    *start = item;
+    strcpy(item->idProduct,idProduct);
+    strcpy(item->name,name);
+    item->quantity = quantity;
+    item->unity = unity;
+
+    item->next = start;
+    return item;
+
+
 }
 
 ItemProduct* removeItem(ItemProduct * start)
@@ -16,7 +19,6 @@ ItemProduct* removeItem(ItemProduct * start)
     ItemProduct * inter;
     if(start == NULL) return NULL;
     inter = start->next;
-    free(start->product);
     free(start);
     return inter;
 }
