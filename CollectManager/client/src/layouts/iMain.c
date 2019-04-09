@@ -49,6 +49,11 @@ int width, height;
                 datas->currentIRenderFct = add_update;
                 break;
             case 1:
+                main_end(datas);
+                del_init(datas);
+                datas->currentIEndFct = del_end;
+                datas->currentIEventsFct = del_event;
+                datas->currentIRenderFct = del_update;
                 break;
             default :
                 break;
@@ -66,7 +71,8 @@ int main_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
     SDL_RenderFillRect(rendererP, &background);
 
     main_update_buttons(rendererP, datas, width, height);
-    drawListProduct(rendererP, datas,width, height);
+
+    drawListProduct(rendererP, datas, width, height);
     SDL_RenderPresent(rendererP);
     return 0;
 }

@@ -846,7 +846,7 @@
 1553506470 source:z:\fightfoodwaste\collectmanager\client\src\datas\commons_datas.c
 	"commons_datas.h"
 
-1554711493 z:\fightfoodwaste\collectmanager\client\src\datas\commons_datas.h
+1554802948 z:\fightfoodwaste\collectmanager\client\src\datas\commons_datas.h
 	<stdio.h>
 	<stdlib.h>
 	"SDL2/SDL.h"
@@ -890,10 +890,10 @@
 1553506470 source:z:\fightfoodwaste\collectmanager\client\src\datas\uimanager.c
 	"uiManager.h"
 
-1554711493 source:z:\fightfoodwaste\collectmanager\client\src\kernel.c
+1554806909 source:z:\fightfoodwaste\collectmanager\client\src\kernel.c
 	"kernel.h"
 
-1554307291 z:\fightfoodwaste\collectmanager\client\src\kernel.h
+1554806381 z:\fightfoodwaste\collectmanager\client\src\kernel.h
 	<SDL2/SDL.h>
 	<SDL2/SDL_image.h>
 	<SDL2/SDL_ttf.h>
@@ -911,7 +911,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1554711493 z:\fightfoodwaste\collectmanager\client\src\ressources.h
+1554825424 z:\fightfoodwaste\collectmanager\client\src\ressources.h
 	<stdio.h>
 	<stdlib.h>
 	"config.h"
@@ -934,7 +934,7 @@
 	"iMain.h"
 	"../utils/uiEvent.h"
 
-1554711493 z:\fightfoodwaste\collectmanager\client\src\layouts\imain.h
+1554822279 z:\fightfoodwaste\collectmanager\client\src\layouts\imain.h
 	<SDL2/SDL.h>
 	<stdio.h>
 	<stdlib.h>
@@ -942,21 +942,22 @@
 	"../datas/commons_datas.h"
 	"../utils/uiEvent.h"
 	"iAddPopup.h"
+	"iDelPopup.h"
 
 1554307292 z:\fightfoodwaste\collectmanager\client\src\utils\uievent.h
 	"../datas/commons_datas.h"
 	<SDL2/SDL.h>
 
-1554711493 source:z:\fightfoodwaste\collectmanager\client\src\layoutloader.c
+1554806465 source:z:\fightfoodwaste\collectmanager\client\src\layoutloader.c
 	"layoutLoader.h"
 
 1554307291 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
 	"iConnexion.h"
 
-1554711493 source:z:\fightfoodwaste\collectmanager\client\src\layouts\imain.c
+1554822249 source:z:\fightfoodwaste\collectmanager\client\src\layouts\imain.c
 	"iMain.h"
 
-1554711493 source:z:\fightfoodwaste\collectmanager\client\src\main.c
+1554806311 source:z:\fightfoodwaste\collectmanager\client\src\main.c
 	<SDL2/SDL.h>
 	<stdio.h>
 	<pthread.h>
@@ -968,7 +969,7 @@
 	"config.h"
 	"utils/network.h"
 
-1554711493 source:z:\fightfoodwaste\collectmanager\client\src\ressources.c
+1554825840 source:z:\fightfoodwaste\collectmanager\client\src\ressources.c
 	"ressources.h"
 
 1554307292 source:z:\fightfoodwaste\collectmanager\client\src\utils\uievent.c
@@ -1155,7 +1156,7 @@
 	<SDL2/SDL_ttf.h>
 	"../../datas/commons_datas.h"
 
-1554738682 z:\fightfoodwaste\collectmanager\client\src\datas\products.h
+1554804133 z:\fightfoodwaste\collectmanager\client\src\datas\products.h
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL.h>
@@ -1171,20 +1172,20 @@
 	"../utils/uiEvent.h"
 	"../layoutLoader.h"
 
-1554739219 source:z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.c
+1554814850 source:z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.c
 	"cListProducts.h"
 
-1554711493 z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.h
+1554814859 z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.h
 	<SDL2/SDL.h>
 	<stdio.h>
 	<stdlib.h>
 	<SDL2/SDL_ttf.h>
 	"../../datas/commons_datas.h"
 
-1554738049 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.c
+1554807252 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.c
 	"iAddPopup.h"
 
-1554738736 source:z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.c
+1554814710 source:z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.c
 	"listHelper.h"
 
 1554711493 z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.h
@@ -1193,4 +1194,17 @@
 
 1554711493 source:z:\fightfoodwaste\collectmanager\client\src\datas\products.c
 	"products.h"
+
+1554822079 z:\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1554825718 source:z:\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.c
+	"iDelPopup.h"
 

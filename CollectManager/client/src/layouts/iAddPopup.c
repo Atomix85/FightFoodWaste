@@ -81,8 +81,8 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
                 strcpy(name,"bonjour");
                 //product.quantity = 9001;
                 //product.unity = 1;
-                datas->nbProduct++;
-                datas->listProduct = addItem(datas->listProduct,idProduct, name, 9001,1);
+                datas->listProduct->nbProduct++;
+                datas->listProduct->productStart = addItem(datas->listProduct->productStart,idProduct, name, 9001,1);
                 add_end(datas);
                 main_init(datas);
                 datas->currentIEndFct = main_end;

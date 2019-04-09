@@ -41,6 +41,7 @@ int main(int argc, char** argv)
     Textures_manager tm;
     UI_manager uim;
     NET_manager netm;
+    ListProduct lprod;
 
 
     //On assigne les différents managers du programme
@@ -48,6 +49,7 @@ int main(int argc, char** argv)
     cDatas.textures = &tm;
     cDatas.ui = &uim;
     cDatas.network = &netm;
+    cDatas.listProduct = &lprod;
 
     //On définit la version et le nom du projet utilisé dans le programme
     cDatas.version = "pre-alpha-1";
@@ -55,13 +57,13 @@ int main(int argc, char** argv)
 
     cDatas.network->isActivated = initNet(&cDatas,15340);
 
-    cDatas.listProduct = NULL;
-    cDatas.nbProduct = 0;
+    cDatas.listProduct->productStart = NULL;
+    cDatas.listProduct->nbProduct = 0;
 
     //On essaye d'initialisé et ensuite de post-initialisé
     //avant de faire tourner le programme en boucle
     if(init(&win, &render,r) &  postInit(render, &cDatas,r)){
-        updateApp(win, render, cDatas);
+        updateApp(win, render, &cDatas);
     }
 
     //La fin du programme détruit et désalloue ce qui a été alloué

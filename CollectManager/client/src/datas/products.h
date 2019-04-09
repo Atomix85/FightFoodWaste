@@ -1,11 +1,4 @@
-/**
-* \file netManager.c
-* \author Alan B.
-* \version 1.0
-* \date 01/04/2019
-*
-* Fichier contenant la structure du NET_manager
-*/
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +9,6 @@
 #define PRODUCT_H
 
 
-/**Strcture contenant les différents éléments de réseau*/
 typedef struct ItemProduct ItemProduct;
 struct ItemProduct {
     char idProduct[14];
@@ -24,6 +16,12 @@ struct ItemProduct {
     char unity;
     int quantity;
     ItemProduct *next;
+};
+
+typedef struct ListProduct ListProduct;
+struct ListProduct {
+    ItemProduct* productStart;
+    int nbProduct;
 };
 
 #endif

@@ -101,6 +101,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/layouts/iConnexion.h" />
+		<Unit filename="src/layouts/iDelPopup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/iDelPopup.h" />
 		<Unit filename="src/layouts/iMain.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -67,7 +67,7 @@ int postInit(SDL_Renderer* rendererP, Datas* datas, Ressources r);
 Fonction à appeler après init et postInit qui permet de faire tourner en
 boucle le programme pour le rendu et pour l'attente d'évenements.
 */
-int updateApp(SDL_Window *windowP, SDL_Renderer *rendereP, Datas datas);
+int updateApp(SDL_Window *windowP, SDL_Renderer *rendereP, Datas *datas);
 /**
 Fonction qui désalloue l'intégrité des données DTO du programme (surfaces
 et textures)

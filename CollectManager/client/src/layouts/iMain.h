@@ -16,6 +16,7 @@
 #include "../utils/uiEvent.h"
 
 #include "iAddPopup.h"
+#include "iDelPopup.h"
 
 #ifndef I_CONCEPTION_H
 #define I_CONCEPTION_H

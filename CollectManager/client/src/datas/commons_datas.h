@@ -58,8 +58,7 @@ struct Datas {
      /**Pointeur vers la fonction de destruction actuelle*/
     int (*currentIEndFct)(Datas*);
 
-    ItemProduct *listProduct;
-    int nbProduct;
+    ListProduct* listProduct;
 
     /**Police de texte du programme*/
     TTF_Font* font;

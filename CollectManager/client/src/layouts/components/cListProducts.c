@@ -3,11 +3,11 @@
 int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height){
 
     int i;
-    char quantity[8];
+    char quantity[9];
     SDL_Rect tmpLine = (SDL_Rect) {0,40, 50, 10};
-    ItemProduct *itemCurrent = datas.listProduct;
+    ItemProduct *itemCurrent = datas.listProduct->productStart;
 
-    if(datas.nbProduct == 0){
+    if(datas.listProduct->nbProduct == 0){
         tmpLine = (SDL_Rect) {width/2-50, height/2,100, 10};
         redrawText(rendererP, &datas, 2, "Liste vide !", 0);
         SDL_RenderCopy(rendererP,datas.textures->texts[2],NULL,&tmpLine);
@@ -36,7 +36,7 @@ int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height)
     while(itemCurrent != NULL){
         tmpLine.x = 45;
 
-        printf("%d\n", datas.nbProduct);
+        printf("addr=%x,id=%s, nxt=%x\n", itemCurrent, itemCurrent->idProduct, itemCurrent->next);
 
         tmpLine.w = 8 * strlen(itemCurrent->idProduct);
         redrawText(rendererP, &datas, 2, itemCurrent->idProduct, 0);
@@ -51,14 +51,19 @@ int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height)
 
         tmpLine.x = 535;
 
-        makeQuantityFormat(quantity, *itemCurrent);
+        makeQuantityFormat(&quantity, itemCurrent);
+
         tmpLine.w = 10 * strlen(quantity);
         redrawText(rendererP, &datas, 2, quantity, 0);
         SDL_RenderCopy(rendererP,datas.textures->texts[2],NULL,&tmpLine);
 
         SDL_RenderDrawLine(rendererP, 0,tmpLine.y+15, width, tmpLine.y+15);
 
+
         itemCurrent = itemCurrent->next;
+        if(itemCurrent == NULL){
+            break;
+        }
         tmpLine.y+=20;
     }
 
@@ -67,38 +72,44 @@ int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height)
 
 }
 
-void makeQuantityFormat(char format[8], ItemProduct product){
-    char result[8];
+void makeQuantityFormat(char (*format)[9], ItemProduct* product){
+
+    char result[9];
     char dec[3];
-    if(product.quantity >= 10000){
+    int mod,div;
+    div = product->quantity/100;
+    mod = product->quantity%100;
+
+    if(product->quantity >= 10000){
         strcpy(result, ">99.9");
-    }else if(product.quantity <= 0){
+    }else if(product->quantity <= 0){
         strcpy(result, "<0.01");
     }else{
-        if(product.quantity >= 100){
-            strcpy(result, itoa(product.quantity/100,dec, 10));
+        if(product->quantity >= 100){
+            strcpy(result, itoa(div,dec, 10));
         }else{
             strcpy(result, "0");
         }
 
-        if(product.quantity % 100 != 0){
+        if(mod != 0){
             strcat(result, ".");
-            if((product.quantity%100) / 10 == 0) strcat(result,"0");
-            strcat(result, itoa(product.quantity%100, dec, 10));
+            if(mod / 10 == 0) strcat(result,"0");
+            strcat(result, itoa(mod, dec, 10));
         }
     }
 
-    switch(product.unity){
-    case 0:
-        break;
+
+    switch(product->unity){
+
     case 1:
         strcat(result, " Kg");
         break;
     case 2:
         strcat(result, " L");
         break;
+    default:
+        break;
     }
-
-    strcpy(format, result);
-
+    strcpy(*format, result);
+    printf("addr=%x,id=%s, nxt=%x\n", product, product->idProduct, product->next);
 }

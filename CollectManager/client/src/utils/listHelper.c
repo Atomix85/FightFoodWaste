@@ -7,7 +7,7 @@ ItemProduct* addItem(ItemProduct* start, char idProduct[13], char name[48], int 
     strcpy(item->name,name);
     item->quantity = quantity;
     item->unity = unity;
-
+    printf("Add : %x", item);
     item->next = start;
     return item;
 

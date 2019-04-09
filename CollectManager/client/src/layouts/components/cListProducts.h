@@ -21,3 +21,4 @@
 
 
 int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height);
+void makeQuantityFormat(char (*format)[9], ItemProduct* product);
