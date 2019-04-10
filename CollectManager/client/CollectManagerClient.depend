@@ -911,7 +911,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1554825424 z:\fightfoodwaste\collectmanager\client\src\ressources.h
+1554882884 z:\fightfoodwaste\collectmanager\client\src\ressources.h
 	<stdio.h>
 	<stdlib.h>
 	"config.h"
@@ -948,16 +948,16 @@
 	"../datas/commons_datas.h"
 	<SDL2/SDL.h>
 
-1554806465 source:z:\fightfoodwaste\collectmanager\client\src\layoutloader.c
+1554885865 source:z:\fightfoodwaste\collectmanager\client\src\layoutloader.c
 	"layoutLoader.h"
 
 1554307291 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
 	"iConnexion.h"
 
-1554822249 source:z:\fightfoodwaste\collectmanager\client\src\layouts\imain.c
+1554890515 source:z:\fightfoodwaste\collectmanager\client\src\layouts\imain.c
 	"iMain.h"
 
-1554806311 source:z:\fightfoodwaste\collectmanager\client\src\main.c
+1554885873 source:z:\fightfoodwaste\collectmanager\client\src\main.c
 	<SDL2/SDL.h>
 	<stdio.h>
 	<pthread.h>
@@ -969,7 +969,7 @@
 	"config.h"
 	"utils/network.h"
 
-1554825840 source:z:\fightfoodwaste\collectmanager\client\src\ressources.c
+1554882874 source:z:\fightfoodwaste\collectmanager\client\src\ressources.c
 	"ressources.h"
 
 1554307292 source:z:\fightfoodwaste\collectmanager\client\src\utils\uievent.c
@@ -978,7 +978,7 @@
 1554307292 source:z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.c
 	"httpRequest.h"
 
-1554711493 z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
+1554891326 z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
 	<curl/curl.h>
 
 1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\curl.h
@@ -1172,7 +1172,7 @@
 	"../utils/uiEvent.h"
 	"../layoutLoader.h"
 
-1554814850 source:z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.c
+1554890326 source:z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.c
 	"cListProducts.h"
 
 1554814859 z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.h
@@ -1182,10 +1182,10 @@
 	<SDL2/SDL_ttf.h>
 	"../../datas/commons_datas.h"
 
-1554807252 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.c
+1554885559 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.c
 	"iAddPopup.h"
 
-1554814710 source:z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.c
+1554890590 source:z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.c
 	"listHelper.h"
 
 1554711493 z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.h
@@ -1205,6 +1205,6 @@
 	"../utils/uiEvent.h"
 	"../layoutLoader.h"
 
-1554825718 source:z:\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.c
+1554882916 source:z:\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.c
 	"iDelPopup.h"
 

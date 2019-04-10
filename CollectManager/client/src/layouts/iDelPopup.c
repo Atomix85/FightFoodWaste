@@ -131,9 +131,7 @@ int del_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
         SDL_RenderFillRect(rendererP,&button);
         switch(i){
             case 0:SDL_RenderCopy(rendererP, datas.textures->texts[4], NULL, &buttonT);break;
-            case 1:SDL_RenderCopy(rendererP, datas.textures->texts[9], NULL, &buttonT);break;
-            case 2:SDL_RenderCopy(rendererP, datas.textures->texts[11], NULL, &buttonT);break;
-            case 3:SDL_RenderCopy(rendererP, datas.textures->texts[12], NULL, &buttonT);break;
+            case 1:SDL_RenderCopy(rendererP, datas.textures->texts[15], NULL, &buttonT);break;
         }
 
     }

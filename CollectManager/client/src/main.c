@@ -14,8 +14,8 @@
 *
 * \file main.c
 * \author Alan B., Kimia K.
-* \version alpha-5
-* \date 10/03/2019
+* \version 1.0.0
+* \date 10/04/2019
 *
 * COLLECTMANAGER PROJECT
 *
@@ -52,7 +52,7 @@ int main(int argc, char** argv)
     cDatas.listProduct = &lprod;
 
     //On définit la version et le nom du projet utilisé dans le programme
-    cDatas.version = "pre-alpha-1";
+    cDatas.version = "1.0.0";
     cDatas.projectName = "CollectManager";
 
     cDatas.network->isActivated = initNet(&cDatas,15340);
@@ -68,7 +68,6 @@ int main(int argc, char** argv)
 
     //La fin du programme détruit et désalloue ce qui a été alloué
     endApp(win, render, cDatas,r);
-    cDatas.listProduct = removeAll(cDatas.listProduct);
     if(cDatas.network->isActivated){
         endNet();
     }

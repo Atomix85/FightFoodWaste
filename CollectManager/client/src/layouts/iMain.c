@@ -55,6 +55,10 @@ int width, height;
                 datas->currentIEventsFct = del_event;
                 datas->currentIRenderFct = del_update;
                 break;
+            case 2:
+                pushList(datas->listProduct->productStart);
+                datas->listProduct->productStart = removeAll(datas->listProduct->productStart);
+                break;
             default :
                 break;
         }

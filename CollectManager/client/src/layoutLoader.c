@@ -128,7 +128,7 @@ void updateEvent(SDL_Event event, SDL_Window* windowP, SDL_Renderer * rendererP,
     //Si le pointeur de fonction rendu est nul,
     //on termine le programme (non-utilisé)
     if(datas->currentIRenderFct == NULL){
-        //freeComponents(datas);
+        datas->listProduct->productStart = removeAll(datas->listProduct->productStart);
         *running = 0;
     }
 

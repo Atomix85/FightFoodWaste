@@ -15,7 +15,7 @@ int userConnect(char* user, char* psw, char *errorMsg){
 
     makeArgs(key,value, 2,&inlineArgs);
 
-    if(sendRequest("176.132.110.29",
+    if(sendRequest("176.132.110.29/WS/userConnect.php",
                 POST_REQUEST,inlineArgs,&answer)){
         if(strcmp(answer, "ok") == 0){
             result=1;
@@ -31,6 +31,40 @@ int userConnect(char* user, char* psw, char *errorMsg){
         return 0;
     }
 }
+
+int pushProduct(char idProduct[14], char name[48], int quantity, char unity ){
+    char* answer;
+
+    char inlineArgs[255];
+    char key[4][32] = {"idProduct", "name", "quantity", "unity"};
+    char value[4][64];
+    int result=0;
+
+
+
+    strcpy(value[0],idProduct);       strcpy(value[1],name);
+    itoa(quantity,value[2],10);       itoa(unity,value[3],10);
+
+
+
+    makeArgs(key,value, 4,&inlineArgs);
+
+    if(sendRequest("176.132.110.29/WS/collect.php",
+                POST_REQUEST,inlineArgs,&answer)){
+        if(strcmp(answer, "ok") == 0){
+            result=1;
+        }
+        else{
+            result=0;
+        }
+
+        destroyAnswer(&answer);
+        return result;
+    }else{
+        return 0;
+    }
+}
+
 int makeArgs(char (*argsKey)[32],char (*argsValue)[64], int nb, char **inlineArgs){
     int i;
     (inlineArgs)[0] = '\0';
@@ -152,5 +186,5 @@ int sendRequest(char* url, int method ,char* args, char** answer ){
 
 void destroyAnswer(char** answer){
     //Destroy an allocated answer
-    free(answer);
+    free(*answer);
 }

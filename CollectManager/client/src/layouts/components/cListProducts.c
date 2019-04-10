@@ -36,8 +36,6 @@ int drawListProduct(SDL_Renderer* rendererP, Datas datas, int width, int height)
     while(itemCurrent != NULL){
         tmpLine.x = 45;
 
-        printf("addr=%x,id=%s, nxt=%x\n", itemCurrent, itemCurrent->idProduct, itemCurrent->next);
-
         tmpLine.w = 8 * strlen(itemCurrent->idProduct);
         redrawText(rendererP, &datas, 2, itemCurrent->idProduct, 0);
         SDL_RenderCopy(rendererP,datas.textures->texts[2],NULL,&tmpLine);
@@ -111,5 +109,4 @@ void makeQuantityFormat(char (*format)[9], ItemProduct* product){
         break;
     }
     strcpy(*format, result);
-    printf("addr=%x,id=%s, nxt=%x\n", product, product->idProduct, product->next);
 }

@@ -29,6 +29,7 @@ Ressources getFilledRessources(char * configFile){
             "Arreter l'ecoute",
             "Attention ! Des produits vont etre supprime",
             "definitivement(c'est tres long). Continuez ?",
+            "  Supprimer   "
 
 
         },
