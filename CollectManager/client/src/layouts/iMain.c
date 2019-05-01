@@ -1,7 +1,7 @@
 #include "iMain.h"
 
 int main_init(Datas* datas){
-    int nbButton = 3;
+    int nbButton = 3 + datas->listProduct->nbProduct;
     int nbGroup = 1; // menu
 
     SDL_Rect* rectsBt = (SDL_Rect*) malloc(sizeof(SDL_Rect) * nbButton);
@@ -17,6 +17,7 @@ int main_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Data
 int width, height;
     int xMouse, yMouse;
     int counter;
+    int i;
     int idBt = -1;
     int buttonX, buttonY, buttonW, buttonH;
     SDL_Rect currentBt;
@@ -30,6 +31,10 @@ int width, height;
     datas->ui->rectBt[0] = (SDL_Rect) {menu.x+5, menu.y+5, menu.w/4-10, menu.h-10};
     datas->ui->rectBt[1] = (SDL_Rect) {menu.x+menu.w/4+5, menu.y+5, menu.w/4-10, menu.h-10};
     datas->ui->rectBt[2] = (SDL_Rect) {menu.x+2*menu.w/4+5, menu.y+5, menu.w/4-10, menu.h-10};
+
+    for(i = 3;i < datas->ui->nbBt;i++){
+        datas->ui->rectBt[i] = (SDL_Rect) {10 ,62+(i-3)*20,15,16};
+    }
 
 
     datas->ui->rectGroup[0] = menu;
@@ -48,18 +53,27 @@ int width, height;
                 datas->currentIEventsFct = add_event;
                 datas->currentIRenderFct = add_update;
                 break;
-            case 1:
+            case 1:/* // On désactive le bouton supprimer
+                main_end(datas);
+                del_init(datas);
+                datas->currentIEndFct = del_end;
+                datas->currentIEventsFct = del_event;
+                datas->currentIRenderFct = del_update;*/
+                break;
+            case 2:
+
+                pushList(datas->listProduct->productStart);
+                datas->listProduct->productStart = removeAll(datas->listProduct->productStart);
+                break;
+            case -1:
+                break;
+            default :
+                datas->listProduct->idToRemove = idBt - 3;
                 main_end(datas);
                 del_init(datas);
                 datas->currentIEndFct = del_end;
                 datas->currentIEventsFct = del_event;
                 datas->currentIRenderFct = del_update;
-                break;
-            case 2:
-                pushList(datas->listProduct->productStart);
-                datas->listProduct->productStart = removeAll(datas->listProduct->productStart);
-                break;
-            default :
                 break;
         }
     }
@@ -113,7 +127,10 @@ int main_update_buttons(SDL_Renderer* rendererP, Datas datas, int width, int hei
         currentTxtBt.h = currentBt.h - 4;
         currentTxtBt.w = currentBt.w - 4;
         currentTxtBt.x = currentBt.x +2;
-        SDL_RenderCopy(rendererP,datas.textures->texts[5 + i],NULL,&currentTxtBt);
+        if(i < 3)
+            SDL_RenderCopy(rendererP,datas.textures->texts[5 + i],NULL,&currentTxtBt);
+        else
+            SDL_RenderCopy(rendererP,datas.textures->texts[16],NULL,&currentTxtBt);
     }
     return 0;
 }

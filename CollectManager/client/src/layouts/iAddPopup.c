@@ -68,7 +68,7 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
     if(event.type == SDL_MOUSEBUTTONDOWN){
         idBt = getIdButtonOn(*datas, xMouse, yMouse);
         switch(idBt){
-            case 0:
+            case 0: //Annuler
                 add_end(datas);
                 main_init(datas);
                 datas->currentIEndFct = main_end;
@@ -81,8 +81,7 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
                 strcpy(name,"bonjour");
                 //product.quantity = 9001;
                 //product.unity = 1;
-                datas->listProduct->nbProduct++;
-                datas->listProduct->productStart = addItem(datas->listProduct->productStart,idProduct, name, 50,1);
+                datas->listProduct->productStart = addItem(datas->listProduct->productStart,&datas->listProduct->nbProduct,idProduct, name, 50,1);
                 add_end(datas);
                 main_init(datas);
                 datas->currentIEndFct = main_end;

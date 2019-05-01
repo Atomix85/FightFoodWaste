@@ -11,6 +11,7 @@
 
 typedef struct ItemProduct ItemProduct;
 struct ItemProduct {
+    int id;
     char idProduct[14];
     char name[48];
     char unity;
@@ -21,6 +22,7 @@ struct ItemProduct {
 typedef struct ListProduct ListProduct;
 struct ListProduct {
     ItemProduct* productStart;
+    int idToRemove;
     int nbProduct;
 };
 

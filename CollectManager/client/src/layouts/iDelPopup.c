@@ -55,9 +55,9 @@ int del_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
                 datas->currentIRenderFct = main_update;
                 return 0;
             case 1:
-                if(datas->listProduct->productStart != NULL){
-                    datas->listProduct->productStart = removeItem(datas->listProduct->productStart);
-                }
+                datas->listProduct->productStart = removeAt(datas->listProduct->productStart,datas->listProduct->idToRemove);
+                datas->listProduct->nbProduct--;
+
                 del_end(datas);
                 main_init(datas);
                 datas->currentIEndFct = main_end;

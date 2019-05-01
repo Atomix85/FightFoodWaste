@@ -18,7 +18,7 @@
 
 
 #define NB_IMAGES 0
-#define NB_TEXT 16
+#define NB_TEXT 17
 
 
 /**

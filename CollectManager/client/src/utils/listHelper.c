@@ -1,6 +1,6 @@
 #include "listHelper.h"
 
-ItemProduct* addItem(ItemProduct* start, char idProduct[13], char name[48], int quantity, char unity){
+ItemProduct* addItem(ItemProduct* start,int* number, char idProduct[13], char name[48], int quantity, char unity){
     ItemProduct * item;
 
     ItemProduct * testProduct = start;
@@ -16,10 +16,12 @@ ItemProduct* addItem(ItemProduct* start, char idProduct[13], char name[48], int 
     item = malloc(sizeof(ItemProduct));
     strcpy(item->idProduct,idProduct);
     strcpy(item->name,name);
+    item->id = *(number);
     item->quantity = quantity;
     item->unity = unity;
     printf("Add : %x", item);
     item->next = start;
+    (*number)++;
     return item;
 
 
@@ -41,6 +43,22 @@ ItemProduct* removeItem(ItemProduct * start)
     inter = start->next;
     free(start);
     return inter;
+}
+ItemProduct* removeAt(ItemProduct* items,int id){
+    ItemProduct* inter;
+    if(items == NULL){
+        return NULL;
+    }
+    if(id == items->id){
+        inter = items->next;
+        free(items);
+
+        inter = removeAt(inter,id);
+        return inter;
+    }else{
+        items->next = removeAt(items->next,id);
+        return items;
+    }
 }
 ItemProduct *removeAll(ItemProduct *start){
     ItemProduct * inter = start;
