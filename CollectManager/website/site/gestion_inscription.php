@@ -8,7 +8,6 @@
     <title>Gestion des stocks</title>
 </head>
 
-    </div><!--/#home-slider-->
     <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
@@ -32,47 +31,67 @@
             <li class="scroll"><a href="#">A venir </a></li>
             <li class="scroll"><a href="#">A venir</a></li>       
           </ul>
-
-        </div>
-
-        <div class="collapse navbar-collapse ">
-          <ul class="nav navbar-nav navbar-right">                 
-           <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Gestion des inscriptions
-    </button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="gestion_inscription_benevole.php">Bénévoles</a><br/>
-      <a class="dropdown-item" href="gestion_inscription_commercant.php">Commercants</a><br/>
-      <a class="dropdown-item" href="gestion_inscription_adherent.php">Adhérents</a><br/>
-      <a class="dropdown-item" href="gestion_inscription_personnel.php">Personnels</a>
-    </div>
-  </div>
-
-          </ul>
         </div>
       </div>
     </div><!--/#main-nav-->
   </header><!--/#home-->
+  <body>
 
-                <h1 class="text-center col-sm-8 col-sm-offset-2"> Liste des inscriptions en attente de validation </h1>
-                <div class="col-sm-8 col-sm-offset-2">
-
-                <?php
-                // false = 0 
-                $requete= $bdd->query("SELECT * FROM user WHERE validation is false");
-                echo "<table class='table'><caption class='text-center'>Inscription en attente </caption><tr><th>Nom</th><th>Prenom</th><th>Année de naissance </th><th>Validation</th> </tr>";
-                while($ligne=$requete->fetch()){
-                               echo "<tr>";
-                               echo "<td>".$ligne['name']."</td><td>" . $ligne['fname'] . "</td><td>" . $ligne['birthday'] . "</td><td>" . $ligne['validation'] . "</td></tr>";
-                                echo "</tr>";
-                }
-                ?>
-                </table>
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>Gestionnaire des inscriptions</h2>
+          <p>Commercants ? Bénévoles ? Adhérents ?</p>
+        </div>
+      </div>
+      <div class="team-members">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+                <a href="gestion_inscription_commercant.php"><img class="img-responsive" src="images/commercant.jpg" alt=""></a>
               </div>
-
-              <br/><br/>
-                <a href="stock_dispo_pdf.php" class="btn btn-primary">Stock PDF disponible</a>
-                </body>
-                </html>
+              <div class="member-info">
+                <h3>Commercants</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <div class="member-image">
+                <a href="gestion_inscription_benevole.php"><img class="img-responsive" src="images/benevoles.jpg" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h3>Bénévoles</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <div class="member-image">
+                <a href="gestion_inscription_adherent.php"><img class="img-responsive" src="images/adherent.jpg" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h3>Adhérents</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <div class="member-image">
+                <a href="gestion_inscription_staff.php"><img class="img-responsive" src="images/staff.png" alt=""></a>
+              </div>
+              <div class="member-info">
+                <br/><br/>
+                <h3>Personnels</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+  </section><!--/#team-->
+ </body>
+</html>
                

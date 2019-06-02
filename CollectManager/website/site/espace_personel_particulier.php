@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
-<?php include("header.php");
+<?php
+session_start();
+if(!isset($_SESSION['id'])){
+  header('Location: index.php');
+}
+include("header.php");
 ?>
 <head>
-    <title>Espace personnel</title>
+    <title>Espace personnel - PARTICULIER</title>
 </head>
 
     </div><!--/#home-slider-->
@@ -23,12 +28,8 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="index.php">Home</a></li>
-            <li class="scroll"><a href="gestion_inscription.php">Gestion des inscriptions</a></li> 
-            <li class="scroll"><a href="gestion_stock.php">Gestion des stocks</a></li>            
-            <li class="scroll"><a href="gestion_tourner.php">Gestion des tournées</a></li>
-            <li class="scroll"><a href="gestion_collecte.php">Gestion des collectes</a></li>
-            <li class="scroll"><a href="#">A venir </a></li>
-            <li class="scroll"><a href="#">A venir</a></li>       
+            <li class="scroll"><a href="gestion_product.php">Gestion de vos produits</a></li>
+            <li class="scroll"><a href="deconnect.php">Se déconnecter</a></li>       
           </ul>
         </div>
       </div>
@@ -36,6 +37,8 @@
   </header><!--/#home-->
 
   <body>
+
+
 
 </body>
 </html>

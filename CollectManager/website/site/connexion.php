@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,15 @@
       <div class="row">
          <div class="heading text-center col-sm-8 col-sm-offset-3 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
          	<br/><br/><br/><br/><br/><br/>
- 
+              <?php
+
+              if(isset($_GET['err'])){
+                if($_GET['err'] == 1){
+                  echo "<p style='color:red;'>Mot de passe ou identifiant incorrect</p>";
+                }
+              }
+
+              ?>
               <form id="main-contact-form" name="contact-form" method="POST" action="treatment_connexion.php">
                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-4">

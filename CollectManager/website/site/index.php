@@ -1,6 +1,12 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include("header.php");?>
+<?php include("header.php");
+session_start();
+$conn = isset($_SESSION["id"]);
+?>
 <body>
 
   <!--.preloader-->
@@ -8,6 +14,9 @@
   <!--/.preloader-->
 
   <header id="home">
+    <?php
+      if(!$conn){
+    ?>
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="item active" style="background-image: url(images/pomme.jpg)">
@@ -38,6 +47,7 @@
       <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
 
     </div><!--/#home-slider-->
+    <?php }?>
     <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
@@ -55,9 +65,14 @@
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="#home">Home</a></li>
             <li class="scroll"><a href="#services">Services</a></li> 
-            <li class="scroll"><a href="#about-us">A propos de nous</a></li>                     
+            <li class="scroll"><a href="#about-us">About Us</a></li>                     
+            <li class="scroll"><a href="#portfolio">Portfolio</a></li>
+            <?php if(!$conn){?>
             <li class="scroll"><a href="connexion.php">Connexion</a></li>
             <li class="scroll"><a href="inscription.php">S'inscrire</a></li>
+            <?php }else{
+              echo "<li class='scroll'><a href='espace_personel.php'>Mon espace</a></li>";
+            }?>
             <li class="scroll"><a href="#contact">Contact</a></li>       
           </ul>
         </div>
@@ -71,8 +86,8 @@
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Our Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+            <h2>Nos Services</h2>
+            <p>Tout nos services sont exclusivement réserver à nos chers adhérents </p>
           </div>
         </div> 
       </div>
@@ -90,7 +105,7 @@
             </a>
             <div class="service-info">
               <h3>Conseils anti-gaspillage</h3>
-              <p>20 conseils essentiels pour réduire le gaspillage de vos aliments <br/><br/></p>
+              <p>20 conseils essentiels pour réduire le gaspillage de vos aliments <br/></p>
             </div>
           </div>
 
@@ -102,7 +117,7 @@
             </a>
             <div class="service-info">
               <h3>Cours de cuisine</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <p>Venez vous inscricre à nos cours de cuisine ! Et enfilez votre tablier! </p>
             </div>
           </div>
 
@@ -114,7 +129,7 @@
             </a>
             <div class="service-info">
               <h3>Partage de véhicules</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <p>Besoin de véhicule ? c'est ici que ca se passe </p><br/>
             </div>
           </div>
 
@@ -138,7 +153,7 @@
           </a>
             <div class="service-info">
               <h3>Services de réparation </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <p>Vous avez besoin d'aide pour vos réparations ? Demandez de l'aide ici :) </p>
             </div>
           </div>
 
@@ -150,7 +165,7 @@
           </a>
             <div class="service-info">
               <h3>Gardiennage</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <p>Vous partez en vacances sans vos animaux ? Besoin de quelqu'un pour prendre soin d'eux jusqu'a votre retour ?</p>
             </div>
           </div>
 
@@ -158,6 +173,7 @@
       </div>
     </div>
   </section><!--/#services-->
+  
 
   <section id="pricing">
     <div class="container">
@@ -179,7 +195,7 @@
                 <li>Conseils anti gaspillage</li>
                 <li>Cours de cuisine</li>
               </ul>
-              <a href="#" class="btn btn-lg btn-primary">Choisir</a>
+              <a href="inscription_adherent.php" class="btn btn-lg btn-primary">Adhérer</a>
             </div>
           </div>
           <div class="col-sm-3">
@@ -193,7 +209,7 @@
                 <li>Cours de cuisine</li>
                 <li>Echange de services entre particuliers</li>
               </ul>
-              <a href="#" class="btn btn-lg btn-primary">Choisir</a>
+              <a href="inscription_adherent.php" class="btn btn-lg btn-primary">Adhérer</a>
             </div>
           </div>
           <div class="col-sm-3">
@@ -208,7 +224,7 @@
                 <li>Echange de services entre particuliers</li>
                 <li>Gardiennage</li>
               </ul>
-              <a href="#" class="btn btn-lg btn-primary">Choisir</a>
+              <a href="inscription_adherent.php" class="btn btn-lg btn-primary">Adhérer</a>
             </div>
           </div>
           <div class="col-sm-3">
@@ -224,7 +240,7 @@
                 <li>Gardiennage</li>
                 <li>Partage de véhicules</li>
               </ul>
-              <a href="#" class="btn btn-lg btn-primary">Choisir</a>
+              <a href="inscription_adherent.php" class="btn btn-lg btn-primary">Adhérer</a>
             </div>
           </div>
         </div>
@@ -237,8 +253,8 @@
       <div class="container">
         <div class="row">
           <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>Nous Contacter </h2>
-            <p>Vous avez des questions ? N'hésitez pas a nous envoyez votre message ! </p>
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
           </div>
         </div>
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -270,12 +286,12 @@
             </div>
             <div class="col-sm-6">
               <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <p>Nous tacherons de vous répondre dans les plus bref délais. Vous recevrez notre réponse sur votre addresse mail saisit dans le formulaire</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 <ul class="address">
                   <li><i class="fa fa-map-marker"></i> <span> Address:</span> 2400 South Avenue A </li>
                   <li><i class="fa fa-phone"></i> <span> Phone:</span> +928 336 2000  </li>
-                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> support@FastFoodWaste.com</a></li>
-                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.fastfoodwaste.com</a></li>
+                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> support@oxygen.com</a></li>
+                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.sitename.com</a></li>
                 </ul>
               </div>                            
             </div>

@@ -30,7 +30,11 @@ Ressources getFilledRessources(char * configFile){
             "Attention ! Des produits vont etre supprime",
             "definitivement(c'est tres long). Continuez ?",
             "  Supprimer   ",
-            "X"
+            "X",
+            "Quantite      ",//17
+            "  Unite  ", // 18
+            "   Kg    ", //19
+            "    L    ", //20
 
 
         },

@@ -1,7 +1,6 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <pthread.h>
-
 #include "kernel.h"
 #include "ressources.h"
 #include "datas/commons_datas.h"

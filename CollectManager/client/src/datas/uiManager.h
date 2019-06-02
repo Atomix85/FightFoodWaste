@@ -33,6 +33,8 @@ struct UI_manager {
     /**Liste des boutons*/
     SDL_Rect * rectBt;
 
+    int idRadioBt;
+
 };
 
 #endif // UI_MANAGER_H

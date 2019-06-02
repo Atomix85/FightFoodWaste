@@ -67,3 +67,23 @@ ItemProduct *removeAll(ItemProduct *start){
     }
     return inter;
 }
+
+int quantiteParseur(char* inputTxt){
+
+    double value;
+    int result;
+
+    if(inputTxt[0] == '\0'){
+        return -1;
+    }
+
+    value = atof(inputTxt);
+    if(value < 0.01){
+        return -1;
+    }else if(value > 99.99){
+        return -1;
+    }else{
+        result = value * 100;
+        return result;
+    }
+}

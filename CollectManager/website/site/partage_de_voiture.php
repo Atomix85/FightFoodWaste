@@ -1,13 +1,14 @@
 <?php
+session_start();
 
+//ini_set('display_errors',1);
 ?>
-
 <!DOCTYPE html>
 <html>
 <?php include("header.php");?>
 <head>
-	<title>Partage de voiture</title>
-		<div class="main-nav">
+  <title>Gardiennage</title>
+    <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,7 +36,25 @@
     </div><!--/#main-nav-->
 </head>
 <body>
+  <?php
+  include("isMember.php");
 
+    if(isset($_SESSION['mail'])){
+      $email = $_SESSION['mail'];
+      if(isMember($email)==1){
+        ?>
+        <meta http-equiv="refresh" content="0; url=inscription_adherent.php">
+        <?php
+      }else{
+       
+        
+      }
+    }else{
+    ?>
+      <meta http-equiv="refresh" content="0; url=connexion.php">
+      <?php
+    }
+?>
 
 </body>
 </html>

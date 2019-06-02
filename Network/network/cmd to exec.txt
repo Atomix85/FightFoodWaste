@@ -1,0 +1,269 @@
+ROUTEUR PARIS :
+
+interface g0/0
+no shutdown
+exit
+
+interface g0/0.10
+encapsulation dot1Q 10
+ip address 192.168.1.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/0.20
+encapsulation dot1Q 20
+ip address 192.168.5.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/3
+ip address 185.93.1.1 255.255.255.0
+no shutdown
+exit
+
+ip route 0.0.0.0 0.0.0.0 185.93.1.254
+interface g0/3
+ip nat outside
+interface g0/0.10
+ip nat inside
+interface g0/0.20
+ip nat inside
+access-list 100 permit 192.168.1.0 0.0.0.255
+access-list 100 permit 192.168.5.0 0.0.0.255
+ip nat inside source list 100 interface g0/3 overload
+
+crypto isakmp policy 1
+encr 3des
+hash md5
+authentication pre-share
+group 2
+lifetime 86400
+exit
+crypto isakmp key firsttech address 185.93.4.1
+ip access-list extended VPN-1
+permit ip 192.168.1.0 0.0.0.255 192.168.4.0 0.0.0.255
+permit ip 192.168.5.0 0.0.0.255 192.168.8.0 0.0.0.255
+exit
+crypto ipsec transform-set TS esp-3des esp-md5-hmac
+exit
+crypto map CMAP 10 ipsec-isakmp
+set peer 185.93.4.1
+set transform-set TS
+match address VPN-1
+access-list 100 deny ip 192.168.1.0 0.0.0.255 192.168.4.0 0.0.0.255
+access-list 100 deny ip 192.168.5.0 0.0.0.255 192.168.8.0 0.0.0.255
+access-list 100 remark
+
+ROUTEUR LIMOGES :
+
+interface g0/0
+no shutdown
+exit
+
+interface g0/0.10
+encapsulation dot1Q 10
+ip address 192.168.2.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/0.20
+encapsulation dot1Q 20
+ip address 192.168.6.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/3
+ip address 185.93.2.1 255.255.255.0
+no shutdown
+exit
+
+ip route 0.0.0.0 0.0.0.0 185.93.2.254
+interface g0/3
+ip nat outside
+interface g0/0.10
+ip nat inside
+interface g0/0.20
+ip nat inside
+access-list 100 permit 192.168.2.0 0.0.0.255
+access-list 100 permit 192.168.6.0 0.0.0.255
+ip nat inside source list 100 interface g0/3 overload
+
+ROUTEUR MARSEILLE :
+
+interface g0/0
+no shutdown
+exit
+
+interface g0/0.10
+encapsulation dot1Q 10
+ip address 192.168.3.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/0.20
+encapsulation dot1Q 20
+ip address 192.168.7.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/3
+ip address 183.93.3.1 255.255.255.0
+no shutdown
+exit
+
+ip route 0.0.0.0 0.0.0.0 185.93.3.254
+interface g0/3
+ip nat outside
+interface g0/0.10
+ip nat inside
+interface g0/0.20
+ip nat inside
+access-list 1 permit 192.168.3.0 0.0.0.255
+access-list 1 permit 192.168.7.0 0.0.0.255
+ip nat inside source list 1 interface g0/3 overload
+
+ROUTEUR NANTES :
+
+interface g0/0
+no shutdown
+exit
+
+interface g0/0.10
+encapsulation dot1Q 10
+ip address 192.168.4.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/0.20
+encapsulation dot1Q 20
+ip address 192.168.8.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/3
+ip address 185.93.4.1 255.255.255.0
+no shutdown
+exit
+
+ip route 0.0.0.0 0.0.0.0 185.93.4.254
+interface g0/3
+ip nat outside
+interface g0/0.10
+ip nat inside
+interface g0/0.20
+ip nat inside
+access-list 1 permit 192.168.4.0 0.0.0.255
+access-list 1 permit 192.168.8.0 0.0.0.255
+ip nat inside source list 1 interface g0/3 overload
+
+crypto isakmp policy 1
+encr 3des
+hash md5
+authentication pre-share
+group 2
+lifetime 86400
+exit
+crypto isakmp key firsttech address 185.93.1.1
+ip access-list extended VPN-1
+permit ip 192.168.4.0 0.0.0.255 192.168.1.0 0.0.0.255
+permit ip 192.168.8.0 0.0.0.255 192.168.5.0 0.0.0.255
+exit
+crypto ipsec transform-set TS esp-3des esp-md5-hmac
+exit
+crypto map CMAP 10 ipsec-isakmp
+set peer 185.93.1.1
+set transform-set TS
+match address VPN-1
+access-list 100 deny ip 192.168.4.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 100 deny ip 192.168.8.0 0.0.0.255 192.168.5.0 0.0.0.255
+access-list 100 remark
+
+ROUTEUR MAIN : 
+
+interface g0/0
+ip address 185.93.1.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/1
+ip address 185.93.4.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/2
+ip address 185.93.3.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/3
+ip address 185.93.2.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/4
+ip address 10.0.0.254 255.255.255.0
+no shutdown
+exit
+
+interface g0/5
+ip address 192.168.249.10 255.255.255.0
+no shutdown
+exit
+
+exit
+ip route 0.0.0.0 0.0.0.0 192.168.249.2
+ip route 192.168.1.0 255.255.255.0 192.168.1.1
+ip route 192.168.4.0 255.255.255.0 192.168.4.1
+
+
+SWITCH PARIS :
+
+vlan 10
+name RESP
+exit
+
+vlan 20
+name BEN
+exit
+
+interface range g0/0 - 3
+switchport mode access
+switchport access vlan 10
+exit
+
+interface range g1/0 - 2
+switchport mode access
+switchport access vlan 20
+exit
+
+interface g3/3
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan 10,20
+exit
+
+
+ACL : 
+
+no ip access-list extended VLAN10
+no ip access-list extended VLAN20
+
+ip access-list extended VLAN10
+permit icmp 192.168.1.0 0.0.3.255 any
+deny icmp any any 
+exit
+
+ip access-list extended VLAN20
+permit icmp 192.168.5.0 0.0.3.255 any
+deny icmp any any 
+exit
+
+int g0/0.10
+ip access-group VLAN10 out
+exit
+
+int g0/0.20
+ip access-group VLAN20 out
+exit
+
+

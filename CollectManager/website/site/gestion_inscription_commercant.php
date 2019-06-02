@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+ini_set('display_errors',1);
+?>
 <!DOCTYPE html>
 <html>
 <?php 
@@ -6,9 +11,10 @@
 ?>
 <head>
     <title>Gestion des stocks</title>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 </head>
 
-    </div><!--/#home-slider-->
     <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
@@ -32,47 +38,23 @@
             <li class="scroll"><a href="#">A venir </a></li>
             <li class="scroll"><a href="#">A venir</a></li>       
           </ul>
-
-        </div>
-
-        <div class="collapse navbar-collapse ">
-          <ul class="nav navbar-nav navbar-right">                 
-           <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Gestion des inscriptions
-    </button>
-    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <a class="dropdown-item" href="gestion_inscription_benevole.php">Bénévoles</a><br/>
-      <a class="dropdown-item" href="gestion_inscription_commercant.php">Commercants</a><br/>
-      <a class="dropdown-item" href="gestion_inscription_adherent.php">Adhérents</a><br/>
-      <a class="dropdown-item" href="gestion_inscription_personnel.php">Personnels</a>
-    </div>
-  </div>
-
-          </ul>
         </div>
       </div>
     </div><!--/#main-nav-->
-  </header><!--/#home-->
 
-                <h1 class="text-center col-sm-8 col-sm-offset-2"> Liste des inscriptions en attente de validation </h1>
-                <div class="col-sm-8 col-sm-offset-2">
+  <?php
 
-                <?php
-                // false = 0 
-                $requete= $bdd->query("SELECT * FROM user WHERE validation is false");
-                echo "<table class='table'><caption class='text-center'>Inscription en attente </caption><tr><th>Nom</th><th>Prenom</th><th>Année de naissance </th><th>Validation</th> </tr>";
-                while($ligne=$requete->fetch()){
-                               echo "<tr>";
-                               echo "<td>".$ligne['name']."</td><td>" . $ligne['fname'] . "</td><td>" . $ligne['birthday'] . "</td><td>" . $ligne['validation'] . "</td></tr>";
-                                echo "</tr>";
-                }
-                ?>
-                </table>
-              </div>
+   include("create_table.php");
 
-              <br/><br/>
-                <a href="stock_dispo_pdf.php" class="btn btn-primary">Stock PDF disponible</a>
-                </body>
-                </html>
+   $returnString="";
+   $returntable=table_Create("SELECT name,fname,nom_entreprise,pays,validation FROM Commercant;",
+     array('name','fname','nom_entreprise','pays','validation'));
+     if($returntable!="0"){
+        $returnString.= "<h3>"."</h3><div>".$returntable."</div>";
+       }
+     echo $returnString;
+
+     ?>
+
+</html>
                

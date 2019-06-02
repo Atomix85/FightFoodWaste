@@ -1,0 +1,57 @@
+-------------Paris-----------------------------------------------
+en
+conf t
+access-list 101 deny ip 10.165.0.32 0.0.0.7 10.165.0.24 0.0.0.7
+access-list 101 permit ip any any
+
+access-list 102 deny ip 10.165.0.24 0.0.0.7 10.165.0.32 0.0.0.7
+access-list 102 permit ip any any
+
+int g0/0.10
+ip access-group 101 out
+int g0/0.20
+ip access-group 102 out
+exit
+------------------Nantes----------------------------------------------
+en
+conf t
+access-list 101 deny ip 10.165.0.40 0.0.0.7 10.165.0.16 0.0.0.7
+access-list 101 permit ip any any
+
+access-list 102 deny ip 10.165.0.16 0.0.0.7 10.165.0.40 0.0.0.7
+access-list 102 permit ip any any
+
+int g0/0.10
+ip access-group 101 out
+int g0/0.20
+ip access-group 102 out
+exit
+--------------------Marseille------------------------------
+en
+conf t
+access-list 101 deny ip 10.165.0.48 0.0.0.7 10.165.0.8 0.0.0.7
+access-list 101 permit ip any any
+
+access-list 102 deny ip 10.165.0.8 0.0.0.7 10.165.0.48 0.0.0.7
+access-list 102 permit ip any any
+
+int g0/0.10
+ip access-group 101 out
+int g0/0.20
+ip access-group 102 out
+exit
+------------------Limoges-------------------------------------------
+
+en
+conf t
+access-list 101 deny ip 10.165.0.56 0.0.0.7 10.165.0.0 0.0.0.7
+access-list 101 permit ip any any
+
+access-list 102 deny ip 10.165.0.0 0.0.0.7 10.165.0.56 0.0.0.7
+access-list 102 permit ip any any
+
+int g0/0.10
+ip access-group 101 out
+int g0/0.20
+ip access-group 102 out
+exit

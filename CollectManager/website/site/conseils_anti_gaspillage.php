@@ -1,15 +1,16 @@
 <?php
+session_start();
 
+ini_set('display_errors',1);
 ?>
-
 <!DOCTYPE html>
 <html>
 <?php include("header.php");
 ?>
 
 <head>
-	<title>20 conseils essentiels pour réduire le gaspillage de vos aliments</title>
-		<div class="main-nav">
+  <title>20 conseils essentiels pour réduire le gaspillage de vos aliments</title>
+    <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,7 +26,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="index.php">Home</a></li>
-            <li class="scroll"><a href="#services">Services</a></li> 
+            <li class="scroll"><a href="index.php#services">Services</a></li> 
             <li class="scroll"><a href="#about-us">About Us</a></li>                     
             <li class="scroll"><a href="#portfolio">Portfolio</a></li>
             <li class="scroll"><a href="#team">Team</a></li>
@@ -37,6 +38,22 @@
     </div><!--/#main-nav-->
 </head>
 <body>
+
+  <?php
+  /*include("isMember.php");
+
+    if(isset($_SESSION['mail'])){
+      $email = $_SESSION['mail'];
+      if(isMember($email)==1){
+        ?>
+        <meta http-equiv="refresh" content="0; url=inscription_adherent.php">
+        <?php
+      }else{
+
+        //Les conseils seront affichés à tout le monde...
+        */?>
+       
+
   <section class="kimia parallax">
     <div class="container">
       <div class="row">
@@ -186,7 +203,5 @@
        
 
 </div>
-
-
 </body>
 </html>

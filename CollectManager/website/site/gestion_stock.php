@@ -8,7 +8,6 @@
     <title>Gestion des stocks</title>
 </head>
 
-    </div><!--/#home-slider-->
     <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
@@ -35,38 +34,36 @@
         </div>
       </div>
     </div><!--/#main-nav-->
-  </header><!--/#home-->
-                <h1 class="text-center col-sm-8 col-sm-offset-2"> Historique des stocks </h1>
-                <div class="col-sm-5">
-                <?php
-                $requete= $bdd->query("SELECT * FROM stock WHERE date_sortie_stock is NULL ORDER BY date_de_peremption DESC");
-                echo "<table class='table'><caption class='text-center'>Historique des stocks disponible </caption><tr><th>Nom</th><th>Quantite</th><th>Date de peremption </th><th>Date d'entre au stock</th> </tr>";
-                while($ligne=$requete->fetch()){
-                               echo "<tr>";
-                               echo "<td>".$ligne['name']."</td><td>" . $ligne['quantite'] . "</td><td>" . $ligne['date_de_peremption'] . "</td><td>" . $ligne['date_entre_stock'] . "</td></tr>";
-                                echo "</tr>";
-                }
-                ?>
-                </table>
-              </div>
 
-                <div class="col-sm-6 col-sm-offset-1">
-                <?php
-                $requete= $bdd->query("SELECT * FROM stock WHERE date_sortie_stock is not NULL ORDER BY date_de_peremption DESC");
-                echo "<table class='table'><caption class='text-center' >Historique des stocks indisponible </caption><tr><th>Nom</th><th>Quantite</th><th>Date de peremption </th><th>Date d'entre au stock</th> </tr>";
-                while($ligne=$requete->fetch()){
-                               echo "<tr>";
-                               echo "<td>".$ligne['name']."</td><td>" . $ligne['quantite'] . "</td><td>" . $ligne['date_de_peremption'] . "</td><td>" . $ligne['date_entre_stock'] . "</td></tr>";
-                                echo "</tr>";
-                }
-               
-               
-                ?>
-                </table>
-              </div>
-              <br/><br/>
-                <a href="stock_dispo_pdf.php" class="btn btn-primary">Stock PDF disponible</a>
-                <a href="stock_indispo_pdf.php" class="btn btn-primary">Stock PDF indisponible</a>
-                </body>
-                </html>
+    <h1 class="text-center col-sm-8 col-sm-offset-2"> Historique des stocks </h1>
+      <div class="col-sm-5">
+      <?php
+      $requete= $bdd->query("SELECT * FROM stock WHERE date_sortie_stock is NULL ORDER BY date_de_peremption DESC");
+      echo "<table class='table'><caption class='text-center'>Historique des stocks disponible </caption><tr><th>Nom</th><th>Quantite</th><th>Date de peremption </th><th>Date d'entre au stock</th> </tr>";
+      while($ligne=$requete->fetch()){
+        echo "<tr>";
+        echo "<td>".$ligne['name']."</td><td>" . $ligne['quantite'] . "</td><td>" . $ligne['date_de_peremption'] . "</td><td>" . $ligne['date_entre_stock'] . "</td></tr>";
+        echo "</tr>";
+        }
+       ?>
+        </table>
+        <a href="stock_dispo_pdf.php" class="btn btn-primary col-sm-offset-4">Stock PDF disponible</a>
+      </div>
+
+      <div class="col-sm-6 col-sm-offset-1">
+        <?php
+        $requete= $bdd->query("SELECT * FROM stock WHERE date_sortie_stock is not NULL ORDER BY date_de_peremption DESC");
+         echo "<table class='table'><caption class='text-center' >Historique des stocks indisponible </caption><tr><th>Nom</th><th>Quantite</th><th>Date de peremption </th><th>Date d'entre au stock</th> </tr>";
+          while($ligne=$requete->fetch()){
+            echo "<tr>";
+            echo "<td>".$ligne['name']."</td><td>" . $ligne['quantite'] . "</td><td>" . $ligne['date_de_peremption'] . "</td><td>" . $ligne['date_entre_stock'] . "</td></tr>";
+            echo "</tr>";
+           }
+          ?>
+          </table>
+
+          <a href="stock_indispo_pdf.php" class="btn btn-primary col-sm-offset-4">Stock PDF indisponible</a>
+      </div>
+ </body>
+</html>
                

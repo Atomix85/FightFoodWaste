@@ -2,9 +2,9 @@
 
 int add_init(Datas* datas){
     int i;
-    int nbButton = 4;
+    int nbButton = 7;
     int nbGroup = 2;
-    int nbInputText = 1;
+    int nbInputText = 2;
 
     SDL_Rect* rectsGr = (SDL_Rect*) malloc(sizeof(SDL_Rect) * nbGroup);
     SDL_Rect* rectsBt = (SDL_Rect*) malloc(sizeof(SDL_Rect) * nbButton);
@@ -36,9 +36,10 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
     int xMouse, yMouse;
     int idBt = -1;
     int i;
+    int quantity;
     int net;
     char idInputTxt;
-    char idProduct[13], name[48];
+    char idProduct[13], name[64];
     SDL_Rect menu;
 
     //Refresh buttons' position
@@ -52,11 +53,17 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
         datas->ui->rectGroup[1] = (SDL_Rect) {0,0,1,1};
 
     datas->ui->rectInputText[0] = (SDL_Rect) {menu.x+20, menu.y+50, menu.w-40, 40};
+    datas->ui->rectInputText[1] = (SDL_Rect) {menu.x+20, menu.y+150, menu.w-40, 40};
+
 
     datas->ui->rectBt[0] = (SDL_Rect){menu.x+10,menu.y+370, menu.w/2 - 20,20};
     datas->ui->rectBt[1] = (SDL_Rect){menu.x+10+menu.w/2,menu.y+370, menu.w/2-20,20};
     datas->ui->rectBt[2] = (SDL_Rect){menu.x+20, menu.y+100, menu.w/2-40, 20};
     datas->ui->rectBt[3] = (SDL_Rect){menu.x+menu.w/2+20, menu.y+100, menu.w/2-40, 20};
+    datas->ui->rectBt[4] = (SDL_Rect){menu.x+20, menu.y+200, menu.w/3-40, 20}; // Unite
+    datas->ui->rectBt[5] = (SDL_Rect){menu.x+menu.w/3+20, menu.y+200, menu.w/3-40, 20}; // Kg
+    datas->ui->rectBt[6] = (SDL_Rect){menu.x+menu.w/3*2+20, menu.y+200, menu.w/3-40, 20}; // L
+
 
     //Network listening
     if(datas->network->isListening){
@@ -78,10 +85,10 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
                 return 0;
             case 1:
                 strcpy(idProduct,datas->ui->inputText[0]);
-                strcpy(name,"bonjour");
-                //product.quantity = 9001;
-                //product.unity = 1;
-                datas->listProduct->productStart = addItem(datas->listProduct->productStart,&datas->listProduct->nbProduct,idProduct, name, 50,1);
+                getInformationProduct(idProduct,&name);
+                quantity = quantiteParseur(datas->ui->inputText[1]);
+                if(quantity == -1) break;
+                datas->listProduct->productStart = addItem(datas->listProduct->productStart,&datas->listProduct->nbProduct,idProduct, name, quantity,datas->ui->idRadioBt-4);
                 add_end(datas);
                 main_init(datas);
                 datas->currentIEndFct = main_end;
@@ -96,13 +103,22 @@ int add_event(SDL_Event event,SDL_Window* windowP, SDL_Renderer* rendererP,Datas
             case 3:
                 datas->network->isListening = 0;
                 break;
+            case 4: // Unite
+                datas->ui->idRadioBt = 4;
+                break;
+            case 5 : // KG
+                datas->ui->idRadioBt = 5;
+                break;
+            case 6 : //L
+                datas->ui->idRadioBt = 6;
+                break;
         }
         idInputTxt = getIdInputTxtOn(*datas, xMouse, yMouse);
         datas->ui->ptrInputText = idInputTxt;
     }
     if(datas->ui->ptrInputText != -1){
         datas->network->lastPacket[0] = '\0';
-        inputTxtListener(datas, event, datas->ui->ptrInputText, 64);
+        inputTxtListener(datas, event, datas->ui->ptrInputText, 16);
     }
     if(strlen(datas->network->lastPacket) > 0){
         strcpy(datas->ui->inputText[0],datas->network->lastPacket);
@@ -153,12 +169,14 @@ int add_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
     //Dessin des boutons
     SDL_GetMouseState(&xMouse, &yMouse);
     idBt = getIdButtonOn(datas,xMouse, yMouse);
-    for(i = 0; i < 4;i++){
+    for(i = 0; i < datas.ui->nbBt ;i++){
         if(idBt == i || (i == 2 && datas.network->isListening) ||
            (i == 3 && !datas.network->isListening) ){
             SDL_SetRenderDrawColor(rendererP,128, 64, 64, 0);
             button.x += 5;
             button.y += 5;
+        }else if(i == datas.ui->idRadioBt){
+            SDL_SetRenderDrawColor(rendererP,128, 64, 64, 0);
         }else{
             SDL_SetRenderDrawColor(rendererP,64,0,0, 0);
         }
@@ -166,13 +184,17 @@ int add_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
         buttonT = (SDL_Rect) {button.x+10, button.y +5, button.w -20, button.h -10};
         SDL_RenderFillRect(rendererP,&button);
         switch(i){
-    case 0:SDL_RenderCopy(rendererP, datas.textures->texts[4], NULL, &buttonT);break;
-    case 1:SDL_RenderCopy(rendererP, datas.textures->texts[9], NULL, &buttonT);break;
-    case 2:SDL_RenderCopy(rendererP, datas.textures->texts[11], NULL, &buttonT);break;
-    case 3:SDL_RenderCopy(rendererP, datas.textures->texts[12], NULL, &buttonT);break;
+          case 0:SDL_RenderCopy(rendererP, datas.textures->texts[4], NULL, &buttonT);break; // Annuler
+          case 1:SDL_RenderCopy(rendererP, datas.textures->texts[9], NULL, &buttonT);break; // Valider
+          case 2:SDL_RenderCopy(rendererP, datas.textures->texts[11], NULL, &buttonT);break; // ecouter la lecture
+          case 3:SDL_RenderCopy(rendererP, datas.textures->texts[12], NULL, &buttonT);break; // Arreter l'ecoute
+          case 4:SDL_RenderCopy(rendererP, datas.textures->texts[18], NULL, &buttonT);break; // Unite
+          case 5:SDL_RenderCopy(rendererP, datas.textures->texts[19], NULL, &buttonT);break; // KG
+          case 6:SDL_RenderCopy(rendererP, datas.textures->texts[20], NULL, &buttonT);break; // L
         }
 
     }
+
     for(i = 0; i< datas.ui->nbInputText; i++){
         button = datas.ui->rectInputText[i];
         if(datas.ui->ptrInputText == i){
@@ -185,17 +207,18 @@ int add_update(SDL_Window* windowP, SDL_Renderer* rendererP, Datas datas){
         SDL_RenderFillRect(rendererP, &button);
         if(strcmp(datas.ui->inputText[i], "") != 0){
             strcpy(tmpInputTxt, datas.ui->inputText[i]);
-            if(i == 1){
-                for(j = 0; j < strlen(tmpInputTxt); j++){
-                    tmpInputTxt[j] = '*';
-                }
-            }
             buttonT = (SDL_Rect) {button.x+2, button.y+10, 10*strlen(datas.ui->inputText[i]), button.h-20};
             redrawText(rendererP, &datas, 2, tmpInputTxt, 0);
             SDL_RenderCopy(rendererP,datas.textures->texts[2],NULL,&buttonT);
         }
         buttonT = (SDL_Rect) {button.x+10, button.y-20, datas.surfaces->texts[i]->w/3, 15};
-        SDL_RenderCopy(rendererP,datas.textures->texts[10],NULL,&buttonT);
+        if(i==0){
+             SDL_RenderCopy(rendererP,datas.textures->texts[10],NULL,&buttonT);
+        }else if(i==1){
+           SDL_RenderCopy(rendererP,datas.textures->texts[17],NULL,&buttonT);
+        }
+
+
     }
 
     //Rendu

@@ -1,4 +1,5 @@
 #include <curl/curl.h>
+#include <stdlib.h>
 
 #define GET_REQUEST     0
 #define POST_REQUEST    1
@@ -25,7 +26,7 @@ int userConnect(char* user, char* psw, char *errorMsg){
             result=0;
         }
 
-        destroyAnswer(&answer);
+        destroyAnswer(answer);
         return result;
     }else{
         return 0;
@@ -58,7 +59,7 @@ int pushProduct(char idProduct[14], char name[48], int quantity, char unity ){
             result=0;
         }
 
-        destroyAnswer(&answer);
+        destroyAnswer(answer);
         return result;
     }else{
         return 0;
@@ -78,20 +79,49 @@ int makeArgs(char (*argsKey)[32],char (*argsValue)[64], int nb, char **inlineArg
     }
     return 1;
 }
-int getInformationProduct(long long numProduct){
-    char* answer;
+int getInformationProduct(char* strProduct,char (*result)[64]){
+    char* answer = NULL;
     char url[255];
-    char strProduct[32];
+    //char strProduct[32];
 
     strcpy(url, "fr.openfoodfacts.org/api/v0/produit/");
-    lltoa(numProduct,strProduct ,10);
+    //lltoa(numProduct,strProduct ,10);
     strcat(url, strProduct);
     strcat(url, ".json");
 
     if(sendRequest(url, GET_REQUEST,"",&answer)){
+        char *occ;
+        char *occ2;
+        int sizeOcc=0;
+        occ = strstr(answer,"\"product_name\"");
+        printf(">>%s\n",answer);
+       if (occ != NULL){
+           occ = strstr(occ,":\"");
+        if (occ != NULL){
+                occ2 = strchr(occ+2,'"');
+                if(occ2 != NULL){
+                    if(occ2-occ-2 > 32){
+                        sizeOcc = 32;
+                    }else{ sizeOcc = occ2-occ-2;}
+                    strncpy(*result,occ+2,sizeOcc);
+
+                    (*result)[sizeOcc]='\0';
+                    printf("%s\n",*result);
+                }
+                else{
+                    strcpy(*result,"undefined");
+                }
+
+        }else{
+          strcpy(*result,"undefined");
+        }
+
+       }else{
+          strcpy(*result,"undefined");
+       }
 
 
-        destroyAnswer(&answer);
+        destroyAnswer(answer);
     }
     else{
         return 0;
@@ -138,7 +168,7 @@ int sendRequest(char* url, int method ,char* args, char** answer ){
         //Set the callback function to specify how to write data from server
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, ptrFuncWriteAnswer);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void*)&buffer);
-
+        //curl_easy_setopt(curl,CURLOPT_CONV_FROM_UTF8_FUNCTION, my_conv_from_utf8_to_ebcdic);
         //Initialize the real url (for GET request)
         strcpy(realUrl, url);
 
@@ -173,6 +203,7 @@ int sendRequest(char* url, int method ,char* args, char** answer ){
         //Allocate a char* to push the buffer in it (will have to free)
         *answer = (char*) malloc(sizeof(char) * buffer._size);
         strcpy(*answer, buffer.buffer);
+        //(*answer)[buffer._size] = '\0';
 
         //Destroy buffer and curl
         curl_easy_cleanup(curl);
@@ -184,7 +215,11 @@ int sendRequest(char* url, int method ,char* args, char** answer ){
     }
 }
 
-void destroyAnswer(char** answer){
+void destroyAnswer(char* answer){
     //Destroy an allocated answer
-    free(*answer);
+    printf("Trying destroy...");
+    if(answer != NULL){
+        free(answer);
+    }
+    printf("Destroyed !");
 }

@@ -1,46 +1,26 @@
 <?php
-
+ini_set('error_reporting', E_ALL);
+ini_set("display_errors", 1);
 include("config.php");
 
-    $mail =$_POST['mail'];
-    $pwd =$_POST['pwd'];
+$mail =$_POST['mail'];
+//$_SESSION['mail']=$mail;
 
-//  Récupération de l'utilisateur et de son pass hashé
-//$request = $bdd ->query("SELECT * FROM `vegnbio`.user WHERE mail = '".$mail."' ");
-//$resultat = $request->fetch();
+$pwd = crypt($_POST["pwd"],"-FFW_75~#");
 
-    $answer = $bdd -> query(" SELECT * FROM user  WHERE mail ='".$mail."' ");
-    $data = $answer->fetch();
+$answer = $bdd->prepare(" SELECT id FROM USERS WHERE mail = :mail AND password = :password");
+$answer->execute(array(":mail"=>$_POST['mail'],":password"=>$pwd));
+$data = $answer->fetch();
 
-
-// Comparaison du pass envoyé via le formulaire avec la base
-//$isPasswordCorrect = password_verify($pwd, $data['password']);
-$isPasswordCorrect = strcmp($pwd, $data['password']);
-//echo $isPasswordCorrect;
-if (!$data['mail'])
+if (!isset($data['id']))
 {
-    echo 'Mail saisi non valide !';
+    header("Location: connexion.php?err=1");
 }
 else
 {
-    if ( $isPasswordCorrect == 0) {
-        //include("compte_chief.php");
-        //$_SESSION['name'] = $data['name'];
-        //$_SESSION['frist_name'] = $data['frist_name'];
-        //echo 'Vous êtes connecté !';
-        include("espace_personel.php");
-        
-    }
-    /*elseif ($isPasswordCorrect){
-        $_SESSION['name'] = $data['name'];
-        $_SESSION['frist_name'] = $data['frist_name'];
-
-        include("header.php");
-        echo 'Vous êtes connecté !';
-    }*/
-    else {
-        echo 'Erreur de Mot de passe  !';
-    }
+    session_start();
+    $_SESSION['id'] = $data['id'];
+    header("Location: espace_personel_particulier.php");
 }
 
 ?>

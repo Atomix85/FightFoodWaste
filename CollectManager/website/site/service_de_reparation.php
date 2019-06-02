@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+//ini_set('display_errors',1);
+?>
 <!DOCTYPE html>
 <html>
 <?php include("header.php");?>
@@ -31,7 +36,24 @@
     </div><!--/#main-nav-->
 </head>
 <body>
-	OK
+<?php
+  include("isMember.php");
 
+    if(isset($_SESSION['mail'])){
+      $email = $_SESSION['mail'];
+      if(isMember($email)==1){
+        ?>
+        <meta http-equiv="refresh" content="0; url=inscription_adherent.php">
+        <?php
+      }else{
+       
+        
+      }
+    }else{
+    ?>
+      <meta http-equiv="refresh" content="0; url=connexion.php">
+      <?php
+    }
+?>
 </body>
 </html>
