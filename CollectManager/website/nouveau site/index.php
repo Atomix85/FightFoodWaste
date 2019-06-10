@@ -89,6 +89,10 @@ include("header.php");
                 echo "<li class='scroll'><a href='espace_personel_staff.php'>";
                   Lang::i18n("mystaff");
                 echo "</a></li>";
+              }else if($_SESSION["type"] == 3){
+                echo "<li class='scroll'><a href='espace_personel_commercant.php'>";
+                  Lang::i18n("myspace");
+                echo "</a></li>";
               }
             }?>
             <?php include("i18n/selectLang.php");?>     

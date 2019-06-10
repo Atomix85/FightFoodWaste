@@ -32,7 +32,8 @@ include("config.php");
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll"><a href="index.php">Home</a></li>
-            <li class="scroll active"><a href="#">Mon espace</a></li>
+            <li class="scroll active"><a href="#">Suggestion des collectes</a></li>
+            <li class="scroll"><a href="technicien_calendar.php">Récapitulatif des tournées</a></li>
             <li class="scroll"><a href="deconnect.php">Se déconnecter</a></li>       
           </ul>
         </div>

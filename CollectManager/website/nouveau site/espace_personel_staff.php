@@ -2,6 +2,10 @@
 <html>
 <?php
 session_start();
+
+require_once('i18n/Language.php');
+Lang::initLang($_SESSION["lang"]);
+
 if(!isset($_SESSION['id']) || $_SESSION["type"] != 2){
   header('Location: index.php');
 }
@@ -15,11 +19,7 @@ $request->execute();
 $GRPPRODUCT = $request->fetchAll();
 
 ?>
-<head>
-    <title> Espace personnel - STAFF </title>
-</head>
-
-    </div><!--/#home-slider-->
+  <header>
     <div class="main-nav" style="background: darkslateblue;">
       <div class="container">
         <div class="navbar-header">
@@ -35,10 +35,10 @@ $GRPPRODUCT = $request->fetchAll();
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="scroll"><a href="management_msg.php">Gestion des messages</a></li>
-            <li class="scroll active"><a href="#">Gestion des produits</a></li>
-            <li class="scroll"><a href="stock_gestion.php">Gestion des stocks</a></li>
-            <li class="scroll"><a href="deconnect.php">Se déconnecter</a></li>       
+            <li class="scroll"><a href="management_msg.php"><?php Lang::i18n("msgmanager"); ?></a></li>
+            <li class="scroll active"><a href="#"><?php Lang::i18n("productsmanager"); ?></a></li>
+            <li class="scroll"><a href="stock_gestion.php"><?php Lang::i18n("stocksmanager"); ?></a></li>
+            <li class="scroll"><a href="deconnect.php"><?php Lang::i18n("deconnect"); ?></a></li>       
           </ul>
         </div>
       </div>
@@ -47,14 +47,13 @@ $GRPPRODUCT = $request->fetchAll();
 
   <body>
     <section>
-    <h2>Mes derniers produits</h2>
+    <h2><?php Lang::i18n("lastproducts"); ?></h2>
     <?php if(count($GRPPRODUCT) > 0){ ?>
     <table class='table'>
-      <caption class='text-center'>Historique des produits publiés </caption>
       <tr>
-        <th>Date de soumission</th>
-        <th>Validé ?</th>
-        <th>Gestion</th>
+        <th><?php Lang::i18n("submitdate"); ?></th>
+        <th><?php Lang::i18n("isvalided"); ?></th>
+        <th><?php Lang::i18n("manager"); ?></th>
       </tr>
       <?php
 
@@ -64,39 +63,44 @@ $GRPPRODUCT = $request->fetchAll();
           }else{
             $isValid = "<div class='glyphicon glyphicon-remove'></div>"; 
           }
-          echo "<tr>";
-          echo "<td>".$line['date_submit']."</td>
+          echo "<tr><td>".$line['date_submit']."</td>
           <td>" . $isValid . "</td>
-          <td> <button class='btn btn-info' onclick='loadProduct(" . $line['id'] . ");'>Gérer</button> <button class='btn btn-success' onclick='valGrpProduct(" . $line['id'] . ");'>Validation</button> <button class='btn btn-danger' onclick='supGrpProduct(" . $line['id'] . ");'>Rejeter</button> </td>
-          </tr>";
-        echo "</tr>";
+          <td><button class='btn btn-info' onclick='loadProduct(" . $line['id'] . ");'>".
+            Lang::valueof("operate").
+          "</button>
+          <button class='btn btn-success' onclick='valGrpProduct(" . $line['id'] . ");'>".
+            Lang::valueof("valid").
+          "</button>
+          <button class='btn btn-danger' onclick='supGrpProduct(" . $line['id'] . ");'>".
+            Lang::valueof("rejet").
+          "</button></td></tr>";
         }
       ?>
       
     </table>
     <?php }else{
-      echo "<p>Malheuresement, aucun produit n'a été soumis :/</p>";
+      echo "<p>" . Lang::valueof("nosubmitproduct") . "</p>";
     }?>
   </section>
   <section>
-    <h2>Gérer les produits</h2>
+    <h2><?php Lang::i18n("findproduct"); ?></h2>
     <div class="form-group">
-      <input type="number" placeholder="Entrepot" id="entrepot" onblur="searchStockProduct()"/>
-      <input type="number" placeholder="Secteur" id="secteur" onblur="searchStockProduct()"/>
-      <input type="number" placeholder="Couloir" id="couloir" onblur="searchStockProduct()"/>
-      <input type="number" placeholder="Bloc" id="bloc" onblur="searchStockProduct()"/>
+      <input type="number" placeholder="<?php Lang::i18n("reposity"); ?>" id="entrepot" onblur="searchStockProduct()"/>
+      <input type="number" placeholder="<?php Lang::i18n("hall"); ?>" id="secteur" onblur="searchStockProduct()"/>
+      <input type="number" placeholder="<?php Lang::i18n("corridor"); ?>" id="couloir" onblur="searchStockProduct()"/>
+      <input type="number" placeholder="<?php Lang::i18n("block"); ?>" id="bloc" onblur="searchStockProduct()"/>
 
     </div>
     <div class="responsive-table" id="SUGGESTIONSTOCKPRODUCT">
     </div>
   </section>
     <!-- Modal gestion produit -->
-    <div id="productModal" class="modal fade" role="dialog" aria-hidden="true" tabindex="-1" style="opacity: 1.0 !important">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+    <div id="productModal" class="modal fade in" style="overflow: scroll;" aria-hidden="true" id="modal-addr" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Liste des produits soumis</h4>
+            <h4 class="modal-title"><?php Lang::i18n("listsubmitproduct"); ?></h4>
           </div>
           <div class="modal-body">
             <div id="PRODUCT_LIST"></div>

@@ -49,7 +49,8 @@ $NOTIFS = $request2->fetchAll();
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll"><a href="index.php"><?php Lang::i18n("home"); ?></a></li>
             <li class="scroll active"><a href="#"><?php Lang::i18n("myspace"); ?></a></li>
-            <li class="scroll"><a href="deconnect.php"><?php Lang::i18n("deconnect"); ?></a></li>       
+            <li class="scroll"><a href="edit_user.php"><span class="glyphicon glyphicon-cog"></a></span></li>
+            <li class="scroll"><a href="deconnect.php"><?php Lang::i18n("deconnect"); ?></a></li>      
           </ul>
         </div>
       </div>
@@ -118,15 +119,17 @@ $NOTIFS = $request2->fetchAll();
       echo "<p>".Lang::valueof("nosubmitproduct")."</p>";
     }?>
     <!-- Modal gestion produit -->
-    <div id="productModal" class="modal fade" role="dialog" aria-hidden="true" tabindex="-1" style="opacity: 1.0 !important">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+    <div id="productModal" class="modal fade in" style="overflow: scroll;" aria-hidden="true" id="modal-addr" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title"><?php Lang::i18n("listsubmitproduct"); ?></h4>
           </div>
           <div class="modal-body">
-            <div id="PRODUCT_LIST"></div>
+            <div id="PRODUCT_LIST">
+             <?php Lang::valueof("noresultproduct"); ?>
+            </div>
           </div>
         </div>
 

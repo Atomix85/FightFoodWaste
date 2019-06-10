@@ -11,7 +11,7 @@ include("config.php");
 
 $request = $bdd->prepare("SELECT COLLECT.date_ramassage, TECHNICIEN.name, TECHNICIEN.fname, COLLECT.fk_grp_products FROM COLLECT
   INNER JOIN TECHNICIEN ON TECHNICIEN.id = COLLECT.fk_technicien
-  WHERE is_confirmed = '1' AND date_ramassage <= NOW() ORDER BY date_ramassage ASC");
+  WHERE is_confirmed = '2' AND date_ramassage <= NOW() ORDER BY date_ramassage ASC");
 $request->execute();
 
 $COLLECT = $request->fetchAll();
@@ -163,7 +163,7 @@ $COLLECT = $request->fetchAll();
             }
           }
         }
-        request.open('GET', "marked_as_managed.php?id="+idProduct);
+        request.open('GET', "marked_as_managed.php?v=3&id="+idProduct);
         request.send();
       }
 

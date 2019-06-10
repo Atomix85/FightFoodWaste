@@ -23,6 +23,12 @@ else if($typeCon == "technician"){
 else if($typeCon == "adherent"){
 	$type = 0;
 	$answer = $bdd->prepare(" SELECT id FROM USERS WHERE mail = :mail AND password = :password");
+}else if($typeCon == "trader"){
+	$type = 3;
+	$answer = $bdd->prepare(" SELECT id FROM COMMERCANT WHERE mail = :mail AND mdp = :password");
+}
+else{
+	header('Location: connexion.php');
 }
 $answer->execute(array(":mail"=>$_POST['mail'],":password"=>$pwd));
 $data = $answer->fetch();

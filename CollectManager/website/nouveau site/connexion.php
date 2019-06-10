@@ -15,7 +15,7 @@ Lang::initLang($_SESSION["lang"]);
 ?>
 
 <head>
-	<title>Page de connexion</title>
+	<title>Fight Food Waste</title>
 </head>
 <body>
   <section id="pageConnexion" class="parallax">

@@ -36,8 +36,8 @@ Lang::initLang($_SESSION["lang"]);
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll"><a href="#home"><?php Lang::i18n("home"); ?></a></li>
-            <li class="scroll"><a href="#services"><?php Lang::i18n("services"); ?></a></li>
+            <li class="scroll"><a href="index.php"><?php Lang::i18n("home"); ?></a></li>
+            <li class="scroll"><a href="index.php#services"><?php Lang::i18n("services"); ?></a></li>
             <?php if(!$conn){?>
             <li class="scroll"><a href="connexion.php"><?php Lang::i18n("loggin");?></a></li>
             <li class="scroll active"><a href="inscription.php"><?php Lang::i18n("register"); ?></a></li>
@@ -72,7 +72,17 @@ Lang::initLang($_SESSION["lang"]);
           </div>
         </div>
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-
+          <?php 
+            if(isset($_GET["err"])){
+              echo "<span style='color:red;'>";
+              if($_GET["err"] == 1){
+                echo "Information(s) incorrecte(s)";
+              }else if($_GET["err"] == 2){
+                echo "Votre code postal n'est pas répertorié";
+              }
+              echo "</span>";
+            }
+          ?>
           <form id="main-contact-form" name="contact-form" method="post" action="treatment_inscription_particulier.php">
 
             <div class="row">
