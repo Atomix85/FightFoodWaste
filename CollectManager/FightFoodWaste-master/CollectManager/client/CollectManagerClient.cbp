@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CollectManager" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CollectManager" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="libmingw32.a" />
+					<Add library="libSDL2main.a" />
+					<Add library="libSDL2.dll.a" />
+					<Add library="libSDL2.a" />
+					<Add library="libSDL2_image.a" />
+					<Add library="libSDL2_ttf.a" />
+					<Add library="libSDL2_net.a" />
+					<Add library="libcurl.a" />
+					<Add library="libcurl.dll.a" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libws2_32.a" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Electronix" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libmingw32.a" />
+					<Add library="libSDL2main.a" />
+					<Add library="libSDL2.dll.a" />
+					<Add library="libSDL2.a" />
+					<Add library="libSDL2_image.a" />
+					<Add library="libSDL2_ttf.a" />
+					<Add directory="lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="src/config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/config.h" />
+		<Unit filename="src/datas/commons_datas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/commons_datas.h" />
+		<Unit filename="src/datas/netManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/netManager.h" />
+		<Unit filename="src/datas/products.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/products.h" />
+		<Unit filename="src/datas/surfacesManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/surfacesManager.h" />
+		<Unit filename="src/datas/texturesManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/texturesManager.h" />
+		<Unit filename="src/datas/uiManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/datas/uiManager.h" />
+		<Unit filename="src/kernel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/kernel.h" />
+		<Unit filename="src/layoutLoader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layoutLoader.h" />
+		<Unit filename="src/layouts/components/cListProducts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/components/cListProducts.h" />
+		<Unit filename="src/layouts/iAddPopup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/iAddPopup.h" />
+		<Unit filename="src/layouts/iConnexion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/iConnexion.h" />
+		<Unit filename="src/layouts/iDelPopup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/iDelPopup.h" />
+		<Unit filename="src/layouts/iMain.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/layouts/iMain.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ressources.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ressources.h" />
+		<Unit filename="src/utils/file_json.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utils/file_json.h" />
+		<Unit filename="src/utils/httpRequest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utils/httpRequest.h" />
+		<Unit filename="src/utils/listHelper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utils/listHelper.h" />
+		<Unit filename="src/utils/network.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utils/network.h" />
+		<Unit filename="src/utils/uiEvent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utils/uiEvent.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

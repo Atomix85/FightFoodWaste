@@ -1,0 +1,78 @@
+ { "user" : "alan" , 
+   "psw" : "1234" , 
+ "products":[ {
+ "unity" : "2" , 
+   "name" : "Cristaline" , 
+  "quantite" : 700 ,
+ "idProduct" : "3268840001008" , 
+  },
+ "unity" : "1" , 
+   "name" : "Kitkat" , 
+  "quantite" : 200 ,
+ "idProduct" : "7613035366749" , 
+  },
+]
+}  { "user" : "bretellealan@hotmail.fr" , 
+   "psw" : "1234" , 
+ "products":[ 
+]
+}  { "user" : "bretellealan@hotmail.fr" , 
+   "psw" : "1234" , 
+ "products":[ {
+ "unity" : "2" , 
+   "name" : "Cristaline" , 
+  "quantite" : 100 ,
+ "idProduct" : "3268840001008" , 
+  },
+]
+}  { "user" : "bretellealan@hotmail.fr" , 
+   "psw" : "1234" , 
+ "products":[ {
+ "unity" : "1" , 
+   "name" : "Cristaline" , 
+  "quantite" : 100 ,
+ "idProduct" : "3268840001008" , 
+  },
+]
+}  { "user" : "bretellealan@hotmail.fr" , 
+   "psw" : "1234" , 
+ "products":[ {
+ "unity" : "1" , 
+   "name" : "Cristaline" , 
+  "quantite" : 500 ,
+ "idProduct" : "3268840001008" , 
+  },
+]
+}  { "user" : "bretellealan@hotmail.fr" , 
+   "psw" : "1234" , 
+ "products":[ {
+ "unity" : "2" , 
+   "name" : "undefined" , 
+  "quantite" : 700 ,
+ "idProduct" : "66" , 
+  },
+]
+}  { "user" : "bretellealan@hotmail.fr" , 
+   "psw" : "1234" , 
+ "products":[ {
+ "unity" : "2" , 
+   "name" : "undefined" , 
+  "quantite" : 700 ,
+ "idProduct" : "66" , 
+  },
+]
+}  { "user" : "bretellealan@hotmail.fr" , 
+   "psw" : "1234" , 
+ "products":[ {
+ "unity" : "0" , 
+   "name" : "sel" , 
+  "quantite" : 100 ,
+ "idProduct" : "3183280017559" , 
+  },
+ "unity" : "2" , 
+   "name" : "Pur jus Pomme" , 
+  "quantite" : 100 ,
+ "idProduct" : "3596710419524" , 
+  },
+]
+} 

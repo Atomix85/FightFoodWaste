@@ -1,11 +1,19 @@
 <?php
 session_start();
+$conn = isset($_SESSION["id"]);
+
+require_once('i18n/Language.php');
+if ( !isset( $_SESSION['lang'] ) )
+{
+    $_SESSION['lang'] = 'fr';
+}
+Lang::initLang($_SESSION["lang"]);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include("header.php");
-session_start();
-$conn = isset($_SESSION["id"]);
+<?php
+include("header.php");
 ?>
 <body>
 
@@ -21,23 +29,23 @@ $conn = isset($_SESSION["id"]);
       <div class="carousel-inner">
         <div class="item active" style="background-image: url(images/pomme.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">Welcome to <span>Fight Food Fast</span></h1>
+            <h1 class="animated fadeInLeftBig"><?php Lang::i18n("welcome"); ?></h1>
            <!-- <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p> -->
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="connexion.php">Se Connecter</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="connexion.php"><?php Lang::i18n("loggin"); ?></a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/salade.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">Say Hello to <span>Fight Food Fast</span></h1>
+            <h1 class="animated fadeInLeftBig"><?php Lang::i18n("welcome"); ?></h1>
             <!-- <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p> -->
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="connexion.php">Se Connecter</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="connexion.php"><?php Lang::i18n("loggin"); ?></a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/panier.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">We are <span>Creative</span></h1>
+            <h1 class="animated fadeInLeftBig"><?php Lang::i18n("welcome"); ?></h1>
            <!--  <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p> -->
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="connexion.php">Se Connecter</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="connexion.php"><?php Lang::i18n("loggin"); ?></a>
           </div>
         </div>
       </div>
@@ -63,22 +71,46 @@ $conn = isset($_SESSION["id"]);
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="#home">Home</a></li>
-            <li class="scroll"><a href="#services">Services</a></li> 
-            <li class="scroll"><a href="#about-us">About Us</a></li>                     
-            <li class="scroll"><a href="#portfolio">Portfolio</a></li>
+            <li class="scroll active"><a href="#home"><?php Lang::i18n("home"); ?></a></li>
+            <li class="scroll"><a href="#services"><?php Lang::i18n("services"); ?></a></li>
             <?php if(!$conn){?>
-            <li class="scroll"><a href="connexion.php">Connexion</a></li>
-            <li class="scroll"><a href="inscription.php">S'inscrire</a></li>
+            <li class="scroll"><a href="connexion.php"><?php Lang::i18n("loggin"); ; ?></a></li>
+            <li class="scroll"><a href="inscription.php"><?php Lang::i18n("register"); ?></a></li>
             <?php }else{
-              echo "<li class='scroll'><a href='espace_personel.php'>Mon espace</a></li>";
+              if($_SESSION["type"] == 0){
+                echo "<li class='scroll'><a href='espace_personel_particulier.php'>";
+                  Lang::i18n("myspace");
+                echo "</a></li>";
+              }else if($_SESSION["type"] == 1){
+                echo "<li class='scroll'><a href='espace_personel_technicien.php'>";
+                  Lang::i18n("myspace");
+                echo "</a></li>";
+              }else if($_SESSION["type"] == 2){
+                echo "<li class='scroll'><a href='espace_personel_staff.php'>";
+                  Lang::i18n("mystaff");
+                echo "</a></li>";
+              }else if($_SESSION["type"] == 3){
+                echo "<li class='scroll'><a href='espace_personel_commercant.php'>";
+                  Lang::i18n("myspace");
+                echo "</a></li>";
+              }
             }?>
-            <li class="scroll"><a href="#contact">Contact</a></li>       
+            <?php include("i18n/selectLang.php");?>     
           </ul>
         </div>
       </div>
     </div><!--/#main-nav-->
   </header><!--/#home-->
+
+  <section>
+    <div id="overlayGL">
+    </div>
+    <script src="webgl/libs/three.js"></script>
+    <script src="webgl/libs/ColladaLoader.js"></script>
+    <script src="webgl/STOCKGL.js"></script>
+  </section>
+
+
 
   <section id="services">
     <div class="container">
@@ -86,8 +118,8 @@ $conn = isset($_SESSION["id"]);
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Nos Services</h2>
-            <p>Tout nos services sont exclusivement réserver à nos chers adhérents </p>
+            <h2><?php Lang::i18n("usservices"); ?></h2>
+            <p><?php Lang::i18n("usservices.desc"); ?></p>
           </div>
         </div> 
       </div>
@@ -98,74 +130,74 @@ $conn = isset($_SESSION["id"]);
          
 
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="350ms">
-            <a href="conseils_anti_gaspillage.php">
+            <a href="anti_waste_advice.php">
               <div class="service-icon">
                 <i class="fa fa-recycle"></i>
               </div>
             </a>
             <div class="service-info">
-              <h3>Conseils anti-gaspillage</h3>
-              <p>20 conseils essentiels pour réduire le gaspillage de vos aliments <br/></p>
+              <h3><?php Lang::i18n("nowastetips"); ?></h3>
+              <p><?php Lang::i18n("nowastetips.desc"); ?><br/></p>
             </div>
           </div>
 
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
-            <a href="cours_de_cuisine.php">
+            <a href="cooked.php">
               <div class="service-icon">
                  <i class="fa fa-spoon"></i>
               </div>
             </a>
             <div class="service-info">
-              <h3>Cours de cuisine</h3>
-              <p>Venez vous inscricre à nos cours de cuisine ! Et enfilez votre tablier! </p>
+              <h3><?php Lang::i18n("cooklesson"); ?></h3>
+              <p><?php Lang::i18n("cooklesson.desc"); ?></p>
             </div>
           </div>
 
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
-            <a href="partage_de_voiture.php">
+            <a href="car.php">
               <div class="service-icon">
                 <i class="fa fa-car"></i>
               </div>
             </a>
             <div class="service-info">
-              <h3>Partage de véhicules</h3>
-              <p>Besoin de véhicule ? c'est ici que ca se passe </p><br/>
+              <h3><?php Lang::i18n("carshare"); ?></h3>
+              <p><?php Lang::i18n("carshare.desc"); ?></p><br/>
             </div>
           </div>
 
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
-            <a href="echange_de_service_pap.php">
+            <a href="help_service_exchange.php">
             <div class="service-icon">
               <i class="fa fa-comments"></i>
             </div>
           </a>
             <div class="service-info">
-              <h3>Echange de services entre particuliers</h3>
-              <p>Bricolage, électricité, plomberie,... </p>
+              <h3><?php Lang::i18n("servicesexchange"); ?></h3>
+              <p><?php Lang::i18n("servicesexchange.desc"); ?></p>
             </div>
           </div>
 
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
-            <a href="service_de_reparation.php">
+            <a href="repear_service.php">
             <div class="service-icon">
             <i class="fa fa-wrench"></i>
             </div>
           </a>
             <div class="service-info">
-              <h3>Services de réparation </h3>
-              <p>Vous avez besoin d'aide pour vos réparations ? Demandez de l'aide ici :) </p>
+              <h3><?php Lang::i18n("repairservices"); ?></h3>
+              <p><?php Lang::i18n("repairservices.desc"); ?></p>
             </div>
           </div>
 
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
-            <a href="gardiennage.php">
+            <a href="caretaking.php">
             <div class="service-icon">
               <i class="fa fa-user-secret"></i>
             </div>
           </a>
             <div class="service-info">
-              <h3>Gardiennage</h3>
-              <p>Vous partez en vacances sans vos animaux ? Besoin de quelqu'un pour prendre soin d'eux jusqu'a votre retour ?</p>
+              <h3><?php Lang::i18n("caretaking"); ?></h3>
+              <p><?php Lang::i18n("caretaking.desc"); ?></p>
             </div>
           </div>
 
@@ -174,22 +206,22 @@ $conn = isset($_SESSION["id"]);
     </div>
   </section><!--/#services-->
   
-
+  
   <section id="pricing">
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-          <h2>Nos tarifs</h2>
-          <p>En devenant adhérant de notre association, vous aurez accées a de nombreux services pendant toute l'année </p>
+          <h2><?php Lang::i18n("ustariff"); ?></h2>
+          <p><?php Lang::i18n("ustariff.desc"); ?></p>
         </div>
       </div>
       <div class="pricing-table">
         <div class="row">
           <div class="col-sm-3">
             <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <h3>Basique</h3>
+              <h3><?php Lang::i18n("ustariff.desc"); ?></h3>
               <div class="price">
-                $39.99<span>/An</span>                          
+                $39.99<span>/An</span>
               </div>
               <ul>
                 <li>Conseils anti gaspillage</li>
@@ -247,6 +279,7 @@ $conn = isset($_SESSION["id"]);
       </div>
     </div>
   </section><!--/#pricing-->
+
  
   <section id="contact">
     <div id="contact-us" class="parallax">

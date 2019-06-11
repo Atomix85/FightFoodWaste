@@ -1,3 +1,17 @@
+<?php
+session_start();
+$conn = isset($_SESSION["id"]);
+if($conn){
+  header("Location: index.php");
+}
+
+require_once('i18n/Language.php');
+if ( !isset( $_SESSION['lang'] ) )
+{
+    $_SESSION['lang'] = 'fr';
+}
+Lang::initLang($_SESSION["lang"]);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,13 +36,27 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="index.php">Home</a></li>
-            <li class="scroll"><a href="index.php#services">Services</a></li> 
-            <li class="scroll"><a href="index.php#about-us">About Us</a></li>                     
-            <li class="scroll"><a href="index.php#portfolio">Portfolio</a></li>
-            <li class="scroll"><a href="index.php#team">Team</a></li>
-            <li class="scroll"><a href="inscription.php">S'inscrire</a></li>
-            <li class="scroll"><a href="index.php#contact">Contact</a></li>       
+            <li class="scroll"><a href="index.php"><?php Lang::i18n("home"); ?></a></li>
+            <li class="scroll"><a href="index.php#services"><?php Lang::i18n("services"); ?></a></li>
+            <?php if(!$conn){?>
+            <li class="scroll"><a href="connexion.php"><?php Lang::i18n("loggin");?></a></li>
+            <li class="scroll active"><a href="inscription.php"><?php Lang::i18n("register"); ?></a></li>
+            <?php }else{
+              if($_SESSION["type"] == 0){
+                echo "<li class='scroll'><a href='espace_personel_particulier.php'>";
+                  Lang::i18n("myspace");
+                echo "</a></li>";
+              }else if($_SESSION["type"] == 1){
+                echo "<li class='scroll'><a href='espace_personel_technicien.php'>";
+                  Lang::i18n("myspace");
+                echo "</a></li>";
+              }else if($_SESSION["type"] == 2){
+                echo "<li class='scroll'><a href='espace_personel_staff.php'>";
+                  Lang::i18n("mystaff");
+                echo "</a></li>";
+              }
+            }?>
+            <?php include("i18n/selectLang.php");?>        
           </ul>
         </div>
       </div>
@@ -39,12 +67,22 @@
       <div class="container">
         <div class="row">
           <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>S'inscrire</h2>
-            <p>Particulier</p>
+            <h2><?php Lang::i18n("register"); ?></h2>
+            <p><?php Lang::i18n("individual"); ?></p>
           </div>
         </div>
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-
+          <?php 
+            if(isset($_GET["err"])){
+              echo "<span style='color:red;'>";
+              if($_GET["err"] == 1){
+                echo "Information(s) incorrecte(s)";
+              }else if($_GET["err"] == 2){
+                echo "Votre code postal n'est pas répertorié";
+              }
+              echo "</span>";
+            }
+          ?>
           <form id="main-contact-form" name="contact-form" method="post" action="treatment_inscription_particulier.php">
 
             <div class="row">
@@ -54,13 +92,13 @@
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Nom" required="required">
+                      <input type="text" name="name" class="form-control" placeholder="<?php Lang::i18n('name'); ?>" required="required">
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="fristname" class="form-control" placeholder="Prenom" required="required">
+                      <input type="text" name="fristname" class="form-control" placeholder="<?php Lang::i18n('firstname'); ?>" required="required">
                     </div>
                   </div>
 
@@ -70,13 +108,13 @@
                  <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control" placeholder="Addresse mail" required="required">
+                      <input type="email" name="email" class="form-control" placeholder="<?php Lang::i18n('mail'); ?>" required="required">
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                      <input type="password" name="password" class="form-control" placeholder="<?php Lang::i18n('password'); ?>" required="required">
                     </div>
                   </div>
                 </div>
@@ -84,13 +122,13 @@
                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="tel" name="tel" class="form-control" placeholder="Telephone" required="required">
+                      <input type="tel" name="tel" class="form-control" placeholder="<?php Lang::i18n('phone'); ?>" required="required">
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="date" name="birthday" class="form-control" placeholder="Date de naissance" required="required">
+                      <input type="date" name="birthday" class="form-control" placeholder="<?php Lang::i18n('birthday'); ?>" required="required">
                     </div>
                   </div>
                 </div>
@@ -102,32 +140,32 @@
 
               <div class="col-sm-4">
                 <div class="form-group">
-                  <input type="number" name="number_adress_volunteer" class="form-control" placeholder="Numero de rue" required="required">
+                  <input type="number" name="number_adress_volunteer" class="form-control" placeholder="<?php Lang::i18n('noaddress'); ?>" required="required">
                 </div>
               </div>
 
               <div class="col-sm-8">
                 <div class="form-group">
-                  <input type="text" name="adress_volunteer" class="form-control" placeholder="Votre adresse domicile" required="required">
+                  <input type="text" name="adress_volunteer" class="form-control" placeholder="<?php Lang::i18n('addressname'); ?>" required="required">
                 </div>
               </div>
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" name="postal_code" class="form-control" placeholder="Code Postal" required="required">
+                  <input type="text" name="postal_code" class="form-control" placeholder="<?php Lang::i18n('cedex'); ?>" required="required">
                 </div>
               </div>
 
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" name="country" class="form-control" placeholder="Pays" required="required">
+                  <input type="text" name="country" class="form-control" placeholder="<?php Lang::i18n('country'); ?>" required="required">
                 </div>
               </div>
 
               </div>
               <div class="col-sm-4 col-sm-offset-4">
                 <div class="form-group">
-                  <button type="submit" class="btn-submit">Send Now</button>
+                  <button type="submit" class="btn-submit"><?php Lang::i18n('register'); ?></button>
                 </div>
               </div>
 

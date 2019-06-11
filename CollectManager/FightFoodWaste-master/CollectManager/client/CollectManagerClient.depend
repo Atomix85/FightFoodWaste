@@ -1,0 +1,2728 @@
+# depslib dependency file v1.0
+1553430306 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\config.c
+	"config.h"
+
+1548707662 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\config.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"SDL2/SDL.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\begin_code.h
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\close_code.h
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541002144 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1541973432 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\commons_datas.c
+	"commons_datas.h"
+
+1554830983 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\commons_datas.h
+	<stdio.h>
+	<stdlib.h>
+	"SDL2/SDL.h"
+	"SDL2/SDL_ttf.h"
+	"surfacesManager.h"
+	"texturesManager.h"
+	"uiManager.h"
+	"products.h"
+	"netManager.h"
+	"../config.h"
+
+1454366533 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1543150806 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1543150927 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1554315816 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\uimanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1541788725 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.c
+	"surfacesManager.h"
+
+1542450694 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.c
+	"texturesManager.h"
+
+1542450688 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\uimanager.c
+	"uiManager.h"
+
+1554830983 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\kernel.c
+	"kernel.h"
+
+1554830983 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\kernel.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ressources.h"
+	"datas/commons_datas.h"
+	"layoutLoader.h"
+	"layouts/iConnexion.h"
+
+1541001582 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556720346 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\ressources.h
+	<stdio.h>
+	<stdlib.h>
+	"config.h"
+
+1553433076 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layoutloader.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"ressources.h"
+	"layouts/iConnexion.h"
+	"datas/commons_datas.h"
+
+1552250279 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imenu.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+
+1554315817 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\uievent.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1554977799 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layoutloader.c
+	"layoutLoader.h"
+
+1553428494 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imenu.c
+	"iMenu.h"
+
+1554977799 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\main.c
+	<SDL2/SDL.h>
+	<stdio.h>
+	<pthread.h>
+	"kernel.h"
+	"ressources.h"
+	"datas/commons_datas.h"
+	"datas/surfacesManager.h"
+	"datas/texturesManager.h"
+	"config.h"
+	"utils/network.h"
+
+1556720337 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\ressources.c
+	"ressources.h"
+
+1554315816 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\uievent.c
+	"uiEvent.h"
+
+1553777778 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"iMain.h"
+	"../utils/uiEvent.h"
+
+1554977461 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
+	"iConnexion.h"
+
+1556721926 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.c
+	"iMain.h"
+
+1554830983 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\imain.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"iAddPopup.h"
+	"iDelPopup.h"
+
+1553506470 source:z:\fightfoodwaste\collectmanager\client\src\config.c
+	"config.h"
+
+1553506470 z:\fightfoodwaste\collectmanager\client\src\config.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"SDL2/SDL.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\begin_code.h
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\sdl2\close_code.h
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506470 source:z:\fightfoodwaste\collectmanager\client\src\datas\commons_datas.c
+	"commons_datas.h"
+
+1554802948 z:\fightfoodwaste\collectmanager\client\src\datas\commons_datas.h
+	<stdio.h>
+	<stdlib.h>
+	"SDL2/SDL.h"
+	"SDL2/SDL_ttf.h"
+	"surfacesManager.h"
+	"texturesManager.h"
+	"uiManager.h"
+	"products.h"
+	"netManager.h"
+	"../config.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1553506470 z:\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1553506470 z:\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1554307291 z:\fightfoodwaste\collectmanager\client\src\datas\uimanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1553506470 source:z:\fightfoodwaste\collectmanager\client\src\datas\surfacesmanager.c
+	"surfacesManager.h"
+
+1553506470 source:z:\fightfoodwaste\collectmanager\client\src\datas\texturesmanager.c
+	"texturesManager.h"
+
+1553506470 source:z:\fightfoodwaste\collectmanager\client\src\datas\uimanager.c
+	"uiManager.h"
+
+1554806909 source:z:\fightfoodwaste\collectmanager\client\src\kernel.c
+	"kernel.h"
+
+1554806381 z:\fightfoodwaste\collectmanager\client\src\kernel.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ressources.h"
+	"datas/commons_datas.h"
+	"layoutLoader.h"
+	"layouts/iConnexion.h"
+
+1553506469 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1554882884 z:\fightfoodwaste\collectmanager\client\src\ressources.h
+	<stdio.h>
+	<stdlib.h>
+	"config.h"
+
+1553506470 z:\fightfoodwaste\collectmanager\client\src\layoutloader.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"ressources.h"
+	"layouts/iConnexion.h"
+	"datas/commons_datas.h"
+
+1554307291 z:\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"iMain.h"
+	"../utils/uiEvent.h"
+
+1554822279 z:\fightfoodwaste\collectmanager\client\src\layouts\imain.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"iAddPopup.h"
+	"iDelPopup.h"
+
+1554307292 z:\fightfoodwaste\collectmanager\client\src\utils\uievent.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1554885865 source:z:\fightfoodwaste\collectmanager\client\src\layoutloader.c
+	"layoutLoader.h"
+
+1554307291 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iconnexion.c
+	"iConnexion.h"
+
+1554890515 source:z:\fightfoodwaste\collectmanager\client\src\layouts\imain.c
+	"iMain.h"
+
+1554885873 source:z:\fightfoodwaste\collectmanager\client\src\main.c
+	<SDL2/SDL.h>
+	<stdio.h>
+	<pthread.h>
+	"kernel.h"
+	"ressources.h"
+	"datas/commons_datas.h"
+	"datas/surfacesManager.h"
+	"datas/texturesManager.h"
+	"config.h"
+	"utils/network.h"
+
+1554882874 source:z:\fightfoodwaste\collectmanager\client\src\ressources.c
+	"ressources.h"
+
+1554307292 source:z:\fightfoodwaste\collectmanager\client\src\utils\uievent.c
+	"uiEvent.h"
+
+1554307292 source:z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.c
+	"httpRequest.h"
+
+1554891326 z:\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
+	<curl/curl.h>
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\curlver.h
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\easy.h
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\multi.h
+	"curl.h"
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\urlapi.h
+	"curl.h"
+
+1553506470 z:\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
+
+1553537219 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.c
+	"httpRequest.h"
+
+1554977799 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\httprequest.h
+	<curl/curl.h>
+
+1549375212 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1549436280 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\curlver.h
+
+1547038828 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1540630854 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\easy.h
+
+1539865672 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\multi.h
+	"curl.h"
+
+1549375212 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\urlapi.h
+	"curl.h"
+
+1547558386 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\curl\typecheck-gcc.h
+
+1554711493 source:z:\fightfoodwaste\collectmanager\client\src\utils\network.c
+	"network.h"
+
+1554307292 z:\fightfoodwaste\collectmanager\client\src\utils\network.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_net.h>
+	"../datas/commons_datas.h"
+
+1554590692 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\network.c
+	"network.h"
+
+1554139848 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\network.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_net.h>
+	"../datas/commons_datas.h"
+
+1451811446 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\include\sdl2\sdl_net.h
+	<stdint.h>
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1554307291 z:\fightfoodwaste\collectmanager\client\include\sdl2\sdl_net.h
+	<stdint.h>
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1554711493 z:\fightfoodwaste\collectmanager\client\src\datas\netmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1554307291 source:z:\fightfoodwaste\collectmanager\client\src\datas\netmanager.c
+	"netManager.h"
+
+1554588068 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\netmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1554139848 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\netmanager.c
+	"netManager.h"
+
+1554561803 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1556723869 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.c
+	"iAddPopup.h"
+
+1556723605 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\products.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1554567125 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\datas\products.c
+	"products.h"
+
+1556723345 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\listhelper.c
+	"listHelper.h"
+
+1554630152 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\utils\listhelper.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1554977799 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.c
+	"cListProducts.h"
+
+1554830983 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../../datas/commons_datas.h"
+
+1554804133 z:\fightfoodwaste\collectmanager\client\src\datas\products.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1554711493 z:\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1554890326 source:z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.c
+	"cListProducts.h"
+
+1554814859 z:\fightfoodwaste\collectmanager\client\src\layouts\components\clistproducts.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../../datas/commons_datas.h"
+
+1554885559 source:z:\fightfoodwaste\collectmanager\client\src\layouts\iaddpopup.c
+	"iAddPopup.h"
+
+1554890590 source:z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.c
+	"listHelper.h"
+
+1554711493 z:\fightfoodwaste\collectmanager\client\src\utils\listhelper.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1554711493 source:z:\fightfoodwaste\collectmanager\client\src\datas\products.c
+	"products.h"
+
+1554822079 z:\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1554882916 source:z:\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.c
+	"iDelPopup.h"
+
+1554830983 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1556723389 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\client\src\layouts\idelpopup.c
+	"iDelPopup.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\config.c
+	"config.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\config.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"SDL2/SDL.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\begin_code.h
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\close_code.h
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\commons_datas.c
+	"commons_datas.h"
+
+1559989184 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\commons_datas.h
+	<stdio.h>
+	<stdlib.h>
+	"SDL2/SDL.h"
+	"SDL2/SDL_ttf.h"
+	"surfacesManager.h"
+	"texturesManager.h"
+	"uiManager.h"
+	"products.h"
+	"netManager.h"
+	"../config.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\surfacesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\texturesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1556831716 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\uimanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\products.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_net.h
+	<stdint.h>
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\netmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\netmanager.c
+	"netManager.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\products.c
+	"products.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\surfacesmanager.c
+	"surfacesManager.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\texturesmanager.c
+	"texturesManager.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\datas\uimanager.c
+	"uiManager.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\kernel.c
+	"kernel.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\kernel.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ressources.h"
+	"datas/commons_datas.h"
+	"layoutLoader.h"
+	"layouts/iConnexion.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556830377 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\ressources.h
+	<stdio.h>
+	<stdlib.h>
+	"config.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layoutloader.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"ressources.h"
+	"layouts/iConnexion.h"
+	"datas/commons_datas.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\iconnexion.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"iMain.h"
+	"../utils/uiEvent.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\imain.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"iAddPopup.h"
+	"iDelPopup.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\uievent.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\iaddpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\idelpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layoutloader.c
+	"layoutLoader.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\components\clistproducts.c
+	"cListProducts.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\components\clistproducts.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../../datas/commons_datas.h"
+
+1557422175 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\iaddpopup.c
+	"iAddPopup.h"
+
+1559999199 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\iconnexion.c
+	"iConnexion.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\idelpopup.c
+	"iDelPopup.h"
+
+1559993449 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\layouts\imain.c
+	"iMain.h"
+
+1557411609 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\main.c
+	<SDL2/SDL.h>
+	<stdio.h>
+	<pthread.h>
+	"kernel.h"
+	"ressources.h"
+	"datas/commons_datas.h"
+	"datas/surfacesManager.h"
+	"datas/texturesManager.h"
+	"config.h"
+	"utils/network.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\network.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_net.h>
+	"../datas/commons_datas.h"
+
+1556831234 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\ressources.c
+	"ressources.h"
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\httprequest.c
+	"httpRequest.h"
+
+1560003321 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\httprequest.h
+	<curl/curl.h>
+	"../json/json.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\curl\curlver.h
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\curl\easy.h
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\curl\multi.h
+	"curl.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\curl\urlapi.h
+	"curl.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\include\curl\typecheck-gcc.h
+
+1559397452 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\listhelper.c
+	"listHelper.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\listhelper.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1556691722 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\network.c
+	"network.h"
+
+1560001939 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\uievent.c
+	"uiEvent.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json.h
+	"debug.h"
+	"linkhash.h"
+	"arraylist.h"
+	"json_util.h"
+	"json_object.h"
+	"json_pointer.h"
+	"json_tokener.h"
+	"json_object_iterator.h"
+	"json_c_version.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\debug.h
+	<stdlib.h>
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\linkhash.h
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_object.h
+	<stddef.h>
+	"json_inttypes.h"
+	"printbuf.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_inttypes.h
+	"json_config.h"
+	<inttypes.h>
+	<stdint.h>
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_config.h
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\printbuf.h
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\arraylist.h
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_util.h
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_pointer.h
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_tokener.h
+	<stddef.h>
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_object_iterator.h
+	<stddef.h>
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json-c\json_c_version.h
+
+1552451080 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\jansson\src\jansson.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	"jansson_config.h"
+
+1552451080 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\jansson\src\jansson_config.h
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json.h
+	"debug.h"
+	"linkhash.h"
+	"arraylist.h"
+	"json_util.h"
+	"json_object.h"
+	"json_pointer.h"
+	"json_tokener.h"
+	"json_object_iterator.h"
+	"json_c_version.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\debug.h
+	<stdlib.h>
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\linkhash.h
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_object.h
+	<stddef.h>
+	"json_inttypes.h"
+	"printbuf.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_inttypes.h
+	"json_config.h"
+	<inttypes.h>
+	<stdint.h>
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\printbuf.h
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\arraylist.h
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_util.h
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_pointer.h
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_tokener.h
+	<stddef.h>
+	"json_object.h"
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_object_iterator.h
+	<stddef.h>
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_c_version.h
+
+1548485750 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\json\json_config.h
+
+1333098128 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\libjson.h
+	"_internal/Source/JSONDefs.h"
+	"_internal/Source/JSONNode.h"
+	"_internal/Source/JSONWorker.h"
+	"_internal/Source/JSONValidator.h"
+	"_internal/Source/JSONStream.h"
+	"_internal/Source/JSONPreparse.h"
+	"_internal/Source/JSON_Base64.h"
+	<stdexcept>
+	<cwchar>
+	<string>
+
+1339144878 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsondefs.h
+	"../../JSONOptions.h"
+	"JSONDefs/Unknown_C.h"
+	"JSONDefs/GNU_C.h"
+	"JSONDefs/Visual_C.h"
+	"JSONDefs/Strings_Defs.h"
+	"JSONAllocator.h"
+
+1331350890 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\jsonoptions.h
+
+1298569668 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsondefs\unknown_c.h
+
+1333529886 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsondefs\gnu_c.h
+
+1298569652 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsondefs\visual_c.h
+
+1333099476 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsondefs\strings_defs.h
+	"../../../JSONOptions.h"
+	<cwchar>
+	<string>
+	<wchar.h>
+	<string>
+	<string.h>
+
+1333106758 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonallocator.h
+	"JSONStats.h"
+	<cstddef>
+	"JSONDefs/Visual_C.h"
+	"JSONDefs/GNU_C.h"
+	"JSONDefs/Unknown_C.h"
+
+1333099574 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonstats.h
+	"../../JSONOptions.h"
+	<map>
+	<sstream>
+	<iostream>
+	<string>
+
+1332735938 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonnode.h
+	"JSONDebug.h"
+	"internalJSONNode.h"
+	<stdexcept>
+	<cstdarg>
+	"JSON_Base64.h"
+
+1333451010 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsondebug.h
+	"JSONDefs.h"
+	"JSONStats.h"
+
+1333106534 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\internaljsonnode.h
+	"JSONDebug.h"
+	"JSONChildren.h"
+	"JSONMemory.h"
+	"JSONGlobals.h"
+	<climits>
+	"JSONSharedString.h"
+
+1332736186 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonchildren.h
+	"JSONMemory.h"
+	"JSONDebug.h"
+
+1333099296 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonmemory.h
+	<cstdlib>
+	<cstring>
+	"JSONDebug.h"
+	<map>
+
+1333530716 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonglobals.h
+	"JSONDefs.h"
+	<string>
+	<map>
+	"JSONMemory.h"
+
+1329787832 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonsharedstring.h
+	"JSONDebug.h"
+	"JSONGlobals.h"
+	"JSONMemory.h"
+
+1333451022 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\json_base64.h
+	"JSONDebug.h"
+	"../Dependencies/libbase64++/libbase64++.h"
+
+1332227096 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\dependencies\libbase64++\libbase64++.h
+	<string>
+	<iostream>
+
+1332238734 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonworker.h
+	"JSONNode.h"
+	"JSONSharedString.h"
+
+1332738666 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonvalidator.h
+	"JSONDebug.h"
+
+1333450992 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonstream.h
+	"JSONDebug.h"
+	"JSONMemory.h"
+
+1333451656 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\libjson\_internal\source\jsonpreparse.h
+	"JSONDebug.h"
+	"JSONNode.h"
+
+1559403995 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\file_json.c
+	<stdlib.h>
+	<string.h>
+
+1560005297 source:\\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\file_json.c
+	"file_json.h"
+
+1560003713 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\file_json.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../datas/commons_datas.h"
+
+1556691722 \\vmware-host\shared folders\téléchargements\fightfoodwaste-master (1)\fightfoodwaste-master\collectmanager\client\src\utils\httprequest.c
+	"httpRequest.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\config.c
+	"config.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\config.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"SDL2/SDL.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\begin_code.h
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\close_code.h
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\commons_datas.c
+	"commons_datas.h"
+
+1559989184 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\commons_datas.h
+	<stdio.h>
+	<stdlib.h>
+	"SDL2/SDL.h"
+	"SDL2/SDL_ttf.h"
+	"surfacesManager.h"
+	"texturesManager.h"
+	"uiManager.h"
+	"products.h"
+	"netManager.h"
+	"../config.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\surfacesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\texturesmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1556831716 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\uimanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\products.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_net.h
+	<stdint.h>
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\netmanager.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_net.h>
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\netmanager.c
+	"netManager.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\products.c
+	"products.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\surfacesmanager.c
+	"surfacesManager.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\texturesmanager.c
+	"texturesManager.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\datas\uimanager.c
+	"uiManager.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\kernel.c
+	"kernel.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\kernel.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_ttf.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ressources.h"
+	"datas/commons_datas.h"
+	"layoutLoader.h"
+	"layouts/iConnexion.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556830378 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\ressources.h
+	<stdio.h>
+	<stdlib.h>
+	"config.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layoutloader.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"ressources.h"
+	"layouts/iConnexion.h"
+	"datas/commons_datas.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\iconnexion.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"iMain.h"
+	"../utils/uiEvent.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\imain.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"iAddPopup.h"
+	"iDelPopup.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\uievent.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\iaddpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\idelpopup.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	<string.h>
+	"../datas/commons_datas.h"
+	"../utils/uiEvent.h"
+	"../layoutLoader.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layoutloader.c
+	"layoutLoader.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\components\clistproducts.c
+	"cListProducts.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\components\clistproducts.h
+	<SDL2/SDL.h>
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_ttf.h>
+	"../../datas/commons_datas.h"
+
+1560283618 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\iaddpopup.c
+	"iAddPopup.h"
+
+1559999200 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\iconnexion.c
+	"iConnexion.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\idelpopup.c
+	"iDelPopup.h"
+
+1560288343 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\layouts\imain.c
+	"iMain.h"
+
+1557411610 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\main.c
+	<SDL2/SDL.h>
+	<stdio.h>
+	<pthread.h>
+	"kernel.h"
+	"ressources.h"
+	"datas/commons_datas.h"
+	"datas/surfacesManager.h"
+	"datas/texturesManager.h"
+	"config.h"
+	"utils/network.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\network.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL2/SDL_net.h>
+	"../datas/commons_datas.h"
+
+1556831234 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\ressources.c
+	"ressources.h"
+
+1560291855 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\file_json.c
+	"file_json.h"
+
+1560003714 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\file_json.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../datas/commons_datas.h"
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\httprequest.c
+	"httpRequest.h"
+
+1560288554 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\httprequest.h
+	<curl/curl.h>
+	"../json/json.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\curl\curlver.h
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\curl\easy.h
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\curl\multi.h
+	"curl.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\curl\urlapi.h
+	"curl.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\include\curl\typecheck-gcc.h
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json.h
+	"debug.h"
+	"linkhash.h"
+	"arraylist.h"
+	"json_util.h"
+	"json_object.h"
+	"json_pointer.h"
+	"json_tokener.h"
+	"json_object_iterator.h"
+	"json_c_version.h"
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\debug.h
+	<stdlib.h>
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\linkhash.h
+	"json_object.h"
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_object.h
+	<stddef.h>
+	"json_inttypes.h"
+	"printbuf.h"
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_inttypes.h
+	"json_config.h"
+	<inttypes.h>
+	<stdint.h>
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_config.h
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\printbuf.h
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\arraylist.h
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_util.h
+	"json_object.h"
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_pointer.h
+	"json_object.h"
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_tokener.h
+	<stddef.h>
+	"json_object.h"
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_object_iterator.h
+	<stddef.h>
+
+1548489350 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\json\json_c_version.h
+
+1559397452 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\listhelper.c
+	"listHelper.h"
+
+1556691722 c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\listhelper.h
+	"../datas/commons_datas.h"
+	<SDL2/SDL.h>
+
+1556691722 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\network.c
+	"network.h"
+
+1560001940 source:c:\users\brete\documents\projects\esgi2\projet annuel\fightfoodwaste\collectmanager\fightfoodwaste-master\collectmanager\client\src\utils\uievent.c
+	"uiEvent.h"
+

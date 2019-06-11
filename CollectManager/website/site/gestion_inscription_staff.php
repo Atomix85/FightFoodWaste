@@ -41,7 +41,7 @@
       <div class="container">
         <div class="row">
           <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>Inscrire</h2>
+            <h2>S'inscrire</h2>
             <p>Personnel</p>
           </div>
         </div>

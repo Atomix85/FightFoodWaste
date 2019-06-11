@@ -1,0 +1,6 @@
+{
+  "idProduct":
+  "name" :
+  "quantity" :
+  "unity" :
+ },

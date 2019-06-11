@@ -1,6 +1,6 @@
 <?php
 try{
-$bdd = new PDO('mysql:host=localhost;dbname=ffw', 'esgi', 'esgi75012');
+$bdd = new PDO('mysql:host=localhost;dbname=ffw', 'root', '');
 }catch(Exception $ex){
 	die($ex);
 }
