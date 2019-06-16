@@ -161,7 +161,7 @@ include("header.php");
             </a>
             <div class="service-info">
               <h3><?php Lang::i18n("carshare"); ?></h3>
-              <p><?php Lang::i18n("carshare.desc"); ?></p><br/>
+              <p><?php Lang::i18n("carshare.desc"); ?></p>
             </div>
           </div>
 
