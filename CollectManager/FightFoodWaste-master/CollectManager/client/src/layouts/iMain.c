@@ -66,6 +66,7 @@ int width, height;
             case 2:
                 //Soumettre la liste
                 //pushList(datas->listProduct->productStart);
+                if(datas->listProduct->nbProduct <= 0) break;
                 parse_json(datas->listProduct->productStart,datas->user,datas->pwd);
                 tmpJSON = fopen("tmp/file.json","r");
                 if(tmpJSON != NULL){

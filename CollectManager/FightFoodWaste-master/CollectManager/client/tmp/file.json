@@ -1,5 +1,13 @@
  { "user" : "bretellealan@hotmail.fr" , 
    "psw" : "1234" , 
- "products":[ 
+ "products":[ {  "name" : "Super smoothie énergie" , 
+  "quantity" : 1000 ,
+ "idProduct" : "5038862239677" , 
+  "unity" : "0" 
+ },{  "name" : "Les aromatisées" , 
+  "quantity" : 2300 ,
+ "idProduct" : "3245411377816" , 
+  "unity" : "0" 
+ }
 ]
 } 

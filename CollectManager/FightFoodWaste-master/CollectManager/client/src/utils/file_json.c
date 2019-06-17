@@ -35,7 +35,7 @@ int parse_json(ItemProduct* start,char *user,char *psw){
               strcpy(nom,item->name);
               qua = item->quantity;
               uni = item->unity;
-              item = item->next;
+
               //printf("id : %s , uni  : %d , qua : %d , nom : %s  ",id,uni,qua,nom);
               //ItemProduct* addItem(ItemProduct* start,int* number, char idProduct[13], char name[48], int quantity, char unity){
                 fprintf(file_json,"{");
@@ -46,13 +46,14 @@ int parse_json(ItemProduct* start,char *user,char *psw){
                 fprintf(file_json," \"idProduct\" : \"%s\" , \n ",id);
                 fprintf(file_json," \"unity\" : \"%d\" \n ",uni);
 
-            fprintf(file_json,"}");
-            if(start->next != NULL)
-                fprintf(file_json,",");
-            fseek(file, 1, SEEK_SET);
+                fprintf(file_json,"}");
+                if(item->next != NULL)
+                    fprintf(file_json,",");
+                item = item->next;
+                fseek(file, 1, SEEK_SET);
+            }
+            fprintf(file_json,"\n]\n} ");
         }
-        fprintf(file_json,"\n]\n} ");
-    }
     }
 
      fseek(file_json, 1, SEEK_SET);
