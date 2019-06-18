@@ -36,8 +36,8 @@ Lang::initLang($_SESSION["lang"]);
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll"><a href="#home"><?php Lang::i18n("home"); ?></a></li>
-            <li class="scroll"><a href="#services"><?php Lang::i18n("services"); ?></a></li>
+            <li class="scroll"><a href="index.php"><?php Lang::i18n("home"); ?></a></li>
+            <li class="scroll"><a href="index.php#services"><?php Lang::i18n("services"); ?></a></li>
             <?php if(!$conn){?>
             <li class="scroll"><a href="connexion.php"><?php Lang::i18n("loggin");?></a></li>
             <li class="scroll active"><a href="inscription.php"><?php Lang::i18n("register"); ?></a></li>
