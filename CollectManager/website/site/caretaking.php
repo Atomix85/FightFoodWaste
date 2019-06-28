@@ -5,12 +5,17 @@ Lang::initLang($_SESSION["lang"]);
 if(!isset($_SESSION['id']) || ($_SESSION["type"] != 0 && $_SESSION["type"] != 4) ){
   header('Location: index.php');
 }
+include("config.php");
+
+$request1 = $bdd->prepare("SELECT * FROM MESSAGE WHERE is_valid = '1' AND category = '5' ORDER BY date_msg DESC");
+$request1->execute();
+$cook = $request1->fetchAll();
+
 ?>
 <!DOCTYPE html>
 <html>
 <?php include("header.php");?>
 <head>
-  <title>Cours de cuisine</title>
     <div class="main-nav">
       <div class="container">
         <div class="navbar-header">
@@ -51,6 +56,32 @@ if(!isset($_SESSION['id']) || ($_SESSION["type"] != 0 && $_SESSION["type"] != 4)
         </div>
       </div>
     </div><!--/#main-nav-->
+
+    <?php if(count($cook) > 0){ ?>
+    <table class='table'>
+      <caption class='text-center'>Liste des messages envoyez rubrique <b>cuisine</b> </caption>
+      <tr>
+        <th>Date</th>
+        <th>Sujet</th>
+        <th>Message</th>
+        <th>Validation</th>
+      </tr>
+      <?php
+
+        foreach ($cook as $line) {
+          echo "<tr>";
+          echo "<td>" . $line['date_msg'] . "</td>
+          <td>" . $line['subject'] . "</td>
+          <td>" .$line['message']. "</td>
+          <td> <button class='btn btn-primary' onclick='valideteMsg(" . $line['id'] . ");'>Ajouter</button>
+          </tr>";
+        }
+      ?> 
+    </table>
+    <?php }else{
+      echo "<p> Pour le moment, il n'y a aucunes offres. </p>";
+    }?>
+
 </head>
 <body>
 
@@ -59,29 +90,23 @@ if(!isset($_SESSION['id']) || ($_SESSION["type"] != 0 && $_SESSION["type"] != 4)
       <div class="container">
         <div class="row">
           <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>Aide aux cuisines</h2>
-            <p>Luttons ensemble contre le gaspillage ensemble ! </p>
+            <h2><?php Lang::i18n("caretaking"); ?></h2>
           </div>
         </div>
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
           <div class="row">
             <div class="col-sm-6">
-              <form id="main-contact-form" name="contact-form" method="post" action="treatment_caretaking.php">
+              <form id="main-contact-form" name="contact-form" method="post" action="treatment_car.php">
                 <div class="form-group">
-                  <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+                  <input type="text" name="subject" class="form-control" placeholder="<?php Lang::i18n('subject'); ?>" required="required">
                 </div>
                 <div class="form-group">
-                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="<?php Lang::i18n('entermsg'); ?>" required="required"></textarea>
                 </div>                        
                 <div class="form-group">
-                  <button type="submit" class="btn-submit">Send Now</button>
+                  <button type="submit" class="btn-submit"><?php Lang::i18n("send"); ?></button>
                 </div>
               </form>   
-            </div>
-            <div class="col-sm-6">
-              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <p>Il vous reste des aliments sur le point de perimé ? Pas de panique, avec l'aide de notre communauté, veuillez saisir vos ingredients et nous ferons de notre mieux pour vous aider a préparer un bon petit plat/dessert ! :D A vos claviez !</p>
-              </div>                            
             </div>
           </div>
         </div>
